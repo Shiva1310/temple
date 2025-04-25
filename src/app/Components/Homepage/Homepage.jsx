@@ -180,14 +180,14 @@ export default function HomePage() {
           <p className="text-xl md:text-2xl text-center max-w-2xl px-4">
             {content[currentLanguage].heroSubtitle}
           </p>
-          <div className="mt-8 flex space-x-4">
+          {/* <div className="mt-8 flex space-x-4">
             <a href="#events" className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200">
               {content[currentLanguage].upcomingEvents}
             </a>
             <a href="#contact" className="bg-transparent border-2 border-white hover:bg-white hover:text-orange-800 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200">
               {content[currentLanguage].visitUs}
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       

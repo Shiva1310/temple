@@ -281,33 +281,6 @@ function HomePage() {
                                 fileName: "[project]/src/app/Components/Homepage/Homepage.jsx",
                                 lineNumber: 180,
                                 columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mt-8 flex space-x-4",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "#events",
-                                        className: "bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200",
-                                        children: content[currentLanguage].upcomingEvents
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/Components/Homepage/Homepage.jsx",
-                                        lineNumber: 184,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "#contact",
-                                        className: "bg-transparent border-2 border-white hover:bg-white hover:text-orange-800 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200",
-                                        children: content[currentLanguage].visitUs
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/Components/Homepage/Homepage.jsx",
-                                        lineNumber: 187,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/Components/Homepage/Homepage.jsx",
-                                lineNumber: 183,
-                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
