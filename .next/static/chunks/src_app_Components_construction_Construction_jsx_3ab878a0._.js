@@ -245,13 +245,12 @@ function Construction() {
                                                 lineNumber: 151,
                                                 columnNumber: 15
                                             }, this),
-                                            "// pages/construction.js (continued)",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-gray-700 leading-relaxed mb-6",
                                                 children: content[language].projectDetails.description
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 158,
+                                                lineNumber: 157,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -264,7 +263,7 @@ function Construction() {
                                                                 children: "•"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                                lineNumber: 164,
+                                                                lineNumber: 163,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -272,18 +271,18 @@ function Construction() {
                                                                 children: feature
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                                lineNumber: 165,
+                                                                lineNumber: 164,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, index, true, {
                                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                        lineNumber: 163,
+                                                        lineNumber: 162,
                                                         columnNumber: 19
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 161,
+                                                lineNumber: 160,
                                                 columnNumber: 15
                                             }, this)
                                         ]
@@ -300,25 +299,35 @@ function Construction() {
                                                 className: "bg-gray-300 h-64 rounded-lg flex items-center justify-center",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-gray-600",
-                                                    children: "Placeholder for Mandapam architectural design"
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                        src: "/images/mandabam1.jpg",
+                                                        alt: "Mandapam architectural design",
+                                                        width: 600,
+                                                        height: 500,
+                                                        className: "rounded-lg"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/construction/Construction.jsx",
+                                                        lineNumber: 174,
+                                                        columnNumber: 21
+                                                    }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                    lineNumber: 173,
+                                                    lineNumber: 172,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 172,
+                                                lineNumber: 171,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                            lineNumber: 171,
+                                            lineNumber: 170,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 170,
+                                        lineNumber: 169,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -337,7 +346,7 @@ function Construction() {
                                                 className: "text-orange-600 h-6 w-6 mr-3"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 192,
+                                                lineNumber: 190,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -345,13 +354,13 @@ function Construction() {
                                                 children: content[language].progressSection.title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 193,
+                                                lineNumber: 191,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 191,
+                                        lineNumber: 189,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -364,7 +373,7 @@ function Construction() {
                                                         children: "0%"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                        lineNumber: 200,
+                                                        lineNumber: 198,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -374,20 +383,20 @@ function Construction() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                        lineNumber: 201,
+                                                        lineNumber: 199,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "100%"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                        lineNumber: 202,
+                                                        lineNumber: 200,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 199,
+                                                lineNumber: 197,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -399,18 +408,18 @@ function Construction() {
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                    lineNumber: 205,
+                                                    lineNumber: 203,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 204,
+                                                lineNumber: 202,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 198,
+                                        lineNumber: 196,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -418,7 +427,7 @@ function Construction() {
                                         children: content[language].progressSection.details
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 212,
+                                        lineNumber: 210,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -427,51 +436,71 @@ function Construction() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "md:w-1/2",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "bg-gray-300 h-48 rounded-lg flex items-center justify-center",
+                                                    className: "bg-gray-300 h-58 rounded-lg flex items-center justify-center",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-gray-600",
-                                                        children: "Placeholder for foundation work image"
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                            src: "/images/mandabam2.jpg",
+                                                            alt: "Foundation work",
+                                                            width: 400,
+                                                            height: 500,
+                                                            className: "rounded-lg"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/construction/Construction.jsx",
+                                                            lineNumber: 219,
+                                                            columnNumber: 21
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                        lineNumber: 219,
+                                                        lineNumber: 217,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                    lineNumber: 218,
+                                                    lineNumber: 216,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 217,
+                                                lineNumber: 215,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "md:w-1/2",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "bg-gray-300 h-48 rounded-lg flex items-center justify-center",
+                                                    className: "bg-gray-300 h-58 rounded-lg flex items-center justify-center",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-gray-600",
-                                                        children: "Placeholder for structural supports image"
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                            src: "/images/mandabam3.jpg",
+                                                            alt: "Structural supports",
+                                                            width: 400,
+                                                            height: 600,
+                                                            className: "rounded-lg"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/construction/Construction.jsx",
+                                                            lineNumber: 232,
+                                                            columnNumber: 21
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                        lineNumber: 234,
+                                                        lineNumber: 231,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                    lineNumber: 233,
+                                                    lineNumber: 230,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 232,
+                                                lineNumber: 229,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 216,
+                                        lineNumber: 214,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -479,7 +508,7 @@ function Construction() {
                                         children: "Next Steps:"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 249,
+                                        lineNumber: 244,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -487,13 +516,13 @@ function Construction() {
                                         children: content[language].progressSection.nextSteps
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 250,
+                                        lineNumber: 245,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                lineNumber: 190,
+                                lineNumber: 188,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -506,7 +535,7 @@ function Construction() {
                                                 className: "text-orange-600 h-6 w-6 mr-3"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 258,
+                                                lineNumber: 253,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -514,13 +543,13 @@ function Construction() {
                                                 children: content[language].donationSection.title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 259,
+                                                lineNumber: 254,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 257,
+                                        lineNumber: 252,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -528,7 +557,7 @@ function Construction() {
                                         children: content[language].donationSection.description
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 264,
+                                        lineNumber: 259,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -539,7 +568,7 @@ function Construction() {
                                                 children: language === 'english' ? 'How to Contribute' : 'பங்களிப்பது எப்படி'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 269,
+                                                lineNumber: 264,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -547,7 +576,7 @@ function Construction() {
                                                 children: content[language].donationSection.howToContribute
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 272,
+                                                lineNumber: 267,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -555,13 +584,13 @@ function Construction() {
                                                 children: content[language].donationSection.contactInfo
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 275,
+                                                lineNumber: 270,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 268,
+                                        lineNumber: 263,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -574,25 +603,25 @@ function Construction() {
                                                     size: 20
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                    lineNumber: 282,
+                                                    lineNumber: 277,
                                                     columnNumber: 17
                                                 }, this),
                                                 content[language].donateButton
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                            lineNumber: 281,
+                                            lineNumber: 276,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 280,
+                                        lineNumber: 275,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                lineNumber: 256,
+                                lineNumber: 251,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -605,7 +634,7 @@ function Construction() {
                                                 className: "text-orange-600 h-6 w-6 mr-3"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 291,
+                                                lineNumber: 286,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -613,13 +642,13 @@ function Construction() {
                                                 children: language === 'english' ? 'Donor Testimonials' : 'நன்கொடையாளர்களின் கருத்துக்கள்'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 292,
+                                                lineNumber: 287,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 290,
+                                        lineNumber: 285,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -636,7 +665,7 @@ function Construction() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                        lineNumber: 300,
+                                                        lineNumber: 295,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -647,18 +676,18 @@ function Construction() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                        lineNumber: 303,
+                                                        lineNumber: 298,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, index, true, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 299,
+                                                lineNumber: 294,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 297,
+                                        lineNumber: 292,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -669,7 +698,7 @@ function Construction() {
                                                 children: content[language].callToAction
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 311,
+                                                lineNumber: 306,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -677,19 +706,19 @@ function Construction() {
                                                 children: language === 'english' ? 'Every contribution brings us closer to completing this sacred space for our community.' : 'ஒவ்வொரு பங்களிப்பும் நமது சமூகத்திற்கான இந்த புனித இடத்தை முடிப்பதற்கு நம்மை நெருக்கமாக கொண்டு வருகிறது.'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                                lineNumber: 314,
+                                                lineNumber: 309,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                        lineNumber: 310,
+                                        lineNumber: 305,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                lineNumber: 289,
+                                lineNumber: 284,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -710,17 +739,17 @@ function Construction() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                                lineNumber: 326,
+                                lineNumber: 321,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                            lineNumber: 325,
+                            lineNumber: 320,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/construction/Construction.jsx",
-                        lineNumber: 324,
+                        lineNumber: 319,
                         columnNumber: 9
                     }, this)
                 ]

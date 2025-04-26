@@ -154,7 +154,6 @@ export default function Construction() {
                   {content[language].projectDetails.title}
                 </h2>
               </div>
-              // pages/construction.js (continued)
               <p className="text-gray-700 leading-relaxed mb-6">
                 {content[language].projectDetails.description}
               </p>
@@ -172,14 +171,13 @@ export default function Construction() {
                 <div className="bg-gray-300 h-64 rounded-lg flex items-center justify-center">
                   <p className="text-gray-600">
                     {/* Replace with actual Image component when you have images */}
-                    {/* <Image 
-                      src="/images/mandapam-design.jpg" 
+                    <Image 
+                      src="/images/mandabam1.jpg" 
                       alt="Mandapam architectural design"
                       width={600}
-                      height={400}
+                      height={500}
                       className="rounded-lg"
-                    /> */}
-                    Placeholder for Mandapam architectural design
+                    />
                   </p>
                 </div>
               </div>
@@ -215,32 +213,29 @@ export default function Construction() {
             
             <div className="bg-amber-50 p-4 rounded-lg mb-6 flex flex-col md:flex-row gap-6">
               <div className="md:w-1/2">
-                <div className="bg-gray-300 h-48 rounded-lg flex items-center justify-center">
+                <div className="bg-gray-300 h-58 rounded-lg flex items-center justify-center">
                   <p className="text-gray-600">
                     {/* Replace with actual Image component when you have images */}
-                    {/* <Image 
-                      src="/images/mandapam-progress-1.jpg" 
+                    <Image 
+                      src="/images/mandabam2.jpg" 
                       alt="Foundation work"
                       width={400}
-                      height={300}
+                      height={500}
                       className="rounded-lg"
-                    /> */}
-                    Placeholder for foundation work image
+                    />
                   </p>
                 </div>
               </div>
               <div className="md:w-1/2">
-                <div className="bg-gray-300 h-48 rounded-lg flex items-center justify-center">
+                <div className="bg-gray-300 h-58 rounded-lg flex items-center justify-center">
                   <p className="text-gray-600">
-                    {/* Replace with actual Image component when you have images */}
-                    {/* <Image 
-                      src="/images/mandapam-progress-2.jpg" 
+                    <Image 
+                      src="/images/mandabam3.jpg" 
                       alt="Structural supports"
                       width={400}
-                      height={300}
+                      height={600}
                       className="rounded-lg"
-                    /> */}
-                    Placeholder for structural supports image
+                    />
                   </p>
                 </div>
               </div>

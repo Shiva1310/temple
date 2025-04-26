@@ -28,15 +28,15 @@ export default function GalleryPage() {
 
   // Sample gallery data - in a real app this would come from your database
   const galleryItems = [
-    { id: 1, category: 'Temple Architecture', image: '/api/placeholder/800/600' },
-    { id: 2, category: 'Temple Architecture', image: '/api/placeholder/800/600' },
-    { id: 3, category: 'Festivals', image: '/api/placeholder/800/600' },
-    { id: 4, category: 'Events', image: '/api/placeholder/800/600' },
-    { id: 5, category: 'Pujas', image: '/api/placeholder/800/600' },
-    { id: 6, category: 'Festivals', image: '/api/placeholder/800/600' },
-    { id: 7, category: 'Events', image: '/api/placeholder/800/600' },
-    { id: 8, category: 'Temple Architecture', image: '/api/placeholder/800/600' },
-    { id: 9, category: 'Pujas', image: '/api/placeholder/800/600' },
+    { id: 1, category: 'Temple Architecture', image: '/images/gallery1.jpg' },
+    { id: 2, category: 'Temple Architecture', image: '/images/gallery3.jpg' },
+    { id: 3, category: 'Festivals', image: '/images/gallery4.jpg' },
+    { id: 4, category: 'Events', image: '/images/gallery5.jpg' },
+    { id: 5, category: 'Pujas', image: '/images/temple.png' },
+    { id: 6, category: 'Festivals', image: '/images/entrance.jpg' },
+    { id: 7, category: 'Events', image: '/images/samyam.jpg' },
+    { id: 8, category: 'Temple Architecture', image: '/images/gallery2.jpg' },
+    { id: 9, category: 'Pujas', image: '/images/koil-1.png' },
   ];
 
   const [activeCategory, setActiveCategory] = useState('All');

@@ -58,47 +58,47 @@ function GalleryPage() {
         {
             id: 1,
             category: 'Temple Architecture',
-            image: '/api/placeholder/800/600'
+            image: '/images/gallery1.jpg'
         },
         {
             id: 2,
             category: 'Temple Architecture',
-            image: '/api/placeholder/800/600'
+            image: '/images/gallery3.jpg'
         },
         {
             id: 3,
             category: 'Festivals',
-            image: '/api/placeholder/800/600'
+            image: '/images/gallery4.jpg'
         },
         {
             id: 4,
             category: 'Events',
-            image: '/api/placeholder/800/600'
+            image: '/images/gallery5.jpg'
         },
         {
             id: 5,
             category: 'Pujas',
-            image: '/api/placeholder/800/600'
+            image: '/images/temple.png'
         },
         {
             id: 6,
             category: 'Festivals',
-            image: '/api/placeholder/800/600'
+            image: '/images/entrance.jpg'
         },
         {
             id: 7,
             category: 'Events',
-            image: '/api/placeholder/800/600'
+            image: '/images/samyam.jpg'
         },
         {
             id: 8,
             category: 'Temple Architecture',
-            image: '/api/placeholder/800/600'
+            image: '/images/gallery2.jpg'
         },
         {
             id: 9,
             category: 'Pujas',
-            image: '/api/placeholder/800/600'
+            image: '/images/koil-1.png'
         }
     ];
     const [activeCategory, setActiveCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('All');

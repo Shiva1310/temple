@@ -147,14 +147,13 @@ export default function History() {
                     <div className="bg-gray-300 h-64 rounded-lg flex items-center justify-center">
                       <p className="text-gray-600">
                         {/* Replace with actual Image component when you have images */}
-                        {/* <Image 
+                        <Image 
                           src={`/images/history-${index + 1}.jpg`} 
                           alt={section.imageAlt}
                           width={800}
                           height={400}
                           className="rounded-lg"
-                        /> */}
-                        Placeholder for: {section.imageAlt}
+                        />
                       </p>
                     </div>
                   </div>

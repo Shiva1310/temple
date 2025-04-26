@@ -242,11 +242,18 @@ function History() {
                                                     className: "bg-gray-300 h-64 rounded-lg flex items-center justify-center",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-gray-600",
-                                                        children: [
-                                                            "Placeholder for: ",
-                                                            section.imageAlt
-                                                        ]
-                                                    }, void 0, true, {
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                            src: `/images/history-${index + 1}.jpg`,
+                                                            alt: section.imageAlt,
+                                                            width: 800,
+                                                            height: 400,
+                                                            className: "rounded-lg"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/History/History.jsx",
+                                                            lineNumber: 150,
+                                                            columnNumber: 25
+                                                        }, this)
+                                                    }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/History/History.jsx",
                                                         lineNumber: 148,
                                                         columnNumber: 23
@@ -274,12 +281,12 @@ function History() {
                                         children: content[language].conclusion
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/History/History.jsx",
-                                        lineNumber: 166,
+                                        lineNumber: 165,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/History/History.jsx",
-                                    lineNumber: 165,
+                                    lineNumber: 164,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -305,17 +312,17 @@ function History() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/History/History.jsx",
-                                lineNumber: 176,
+                                lineNumber: 175,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/History/History.jsx",
-                            lineNumber: 175,
+                            lineNumber: 174,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/History/History.jsx",
-                        lineNumber: 174,
+                        lineNumber: 173,
                         columnNumber: 9
                     }, this)
                 ]

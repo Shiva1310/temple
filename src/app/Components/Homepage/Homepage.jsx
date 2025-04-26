@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from 'react';
-import { Sun, Menu, X, Calendar, Book, MapPin, Phone, Mail, Camera, Clock, Gem,Heart} from 'lucide-react';
+import { Sun, Menu, X, Calendar, Book, MapPin, Phone, Mail, Camera, Clock, Gem,Heart,sparkles, Sparkle} from 'lucide-react';
 import { useLanguage } from '@/app/contexts/LanguageContext';
 
 export default function HomePage() {
@@ -254,23 +254,33 @@ export default function HomePage() {
       
       {/* Construction Update */}
       <section className="py-16 px-4 bg-amber-50">
-  <div className="container mx-auto">
-    <div className="max-w-4xl mx-auto text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-6">
-        {content[currentLanguage].historyTitle}
-      </h2>
-      <p className="text-lg text-gray-700 leading-relaxed mb-8">
-        {content[currentLanguage].historyShort}
-      </p>
-      <a 
-        href="/history" 
-        className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
-      >
-        {content[currentLanguage].readMore}
-      </a>
+      <div className="container mx-auto">
+  <div className="max-w-4xl mx-auto text-center">
+    <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-6">
+      {content[currentLanguage].historyTitle}
+    </h2>
+    
+    {/* Added image element here */}
+    <div className="mb-8">
+      <img 
+        src="/images/koil-1.png" 
+        alt="Historical imagery" 
+        className="rounded-lg shadow-md mx-auto"
+      />
     </div>
+    
+    <p className="text-lg text-gray-700 leading-relaxed mb-8">
+      {content[currentLanguage].historyShort}
+    </p>
+    <a
+      href="/history"
+      className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
+    >
+      {content[currentLanguage].readMore}
+    </a>
   </div>
-</section>
+</div>
+      </section>
 
 {/* Services Section - Add after History Section */}
 <section className="py-16 px-4 bg-white">
@@ -288,7 +298,7 @@ export default function HomePage() {
       {content[currentLanguage].serviceHighlights.map((service, index) => (
         <div key={index} className="bg-amber-50 rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
           <div className="text-orange-600 mb-4">
-            {/* {service.icon === 'Pray' && <Pray className="h-12 w-12" />} */}
+            {service.icon === 'Pray' && <Sparkle className="h-12 w-12" />}
             {service.icon === 'Gem' && <Gem className="h-12 w-12" />}
             {service.icon === 'Heart' && <Heart className="h-12 w-12" />}
           </div>
@@ -336,7 +346,7 @@ export default function HomePage() {
       <div className="md:w-1/2">
         <div className="bg-white p-2 rounded-xl shadow-lg">
           <img 
-            src="/api/placeholder/600/400" 
+            src="/images/mandabam-1.jpg" 
             alt="Mandapam Construction" 
             className="rounded-lg w-full h-auto"
           />
