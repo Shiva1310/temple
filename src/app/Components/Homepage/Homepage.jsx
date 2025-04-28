@@ -166,7 +166,7 @@ export default function HomePage() {
  className="absolute top-0 left-0 w-full h-full object-cover"
 >
   <source
-  src="https://res.cloudinary.com/dn9w8pm0t/video/upload/v1745485319/r4lv4z2igl8xc37owcnm.mp4"
+  src="https://res.cloudinary.com/dn9w8pm0t/video/upload/v1745818384/YouCut_20210523_122136304_gymbge.mp4"
   type="video/mp4"
 />
   

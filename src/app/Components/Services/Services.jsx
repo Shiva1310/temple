@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react';
 import Head from 'next/head';
-import { ArrowLeft, Calendar, Clock, Heart, Star, Users, Gift } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Heart, Star, Users, Gift,Home,Book } from 'lucide-react';
 import Link from 'next/link';
 import { useLanguage } from '@/app/contexts/LanguageContext';
 
@@ -81,29 +81,41 @@ export default function Services() {
             }
           ]
         },
-        communityServices: {
-          title: "Community Services",
-          description: "Beyond religious ceremonies, our temple is committed to serving the community in various ways.",
-          services: [
-            {
-              icon: "Heart",
-              title: "Annadanam (Food Distribution)",
-              description: "Regular food distribution to devotees and those in need, especially during festivals and special occasions."
-            },
-            {
-              title: "Spiritual Discourses",
-              description: "Regular classes on Hindu scriptures, philosophy, and spiritual practices."
-            },
-            {
-              title: "Cultural Programs",
-              description: "Promotion of traditional arts, music, and dance through regular cultural events."
-            },
-            {
-              title: "Youth Programs",
-              description: "Special activities focused on educating younger generations about Hindu traditions and values."
-            }
-          ]
+       communityServices: {
+      title: "Community Services",
+      description: "Beyond religious ceremonies, our temple is committed to serving the community in various ways.",
+      services: [
+        {
+          icon: "Home",
+          title: "Sastha Community Hall",
+          description: "Multipurpose hall available for marriage functions, birthday celebrations, and various community events.",
+          btnText: "Booking Details",
+          link: "/communityhall"
         },
+        {
+          icon: "Book",
+          title: "Samayavakupu (Spiritual Classes)",
+          description: "Comprehensive Hindu spiritual classes for devotees and students to learn about scriptures and traditions.",
+          btnText: "Learn More",
+          link: "/samayavakupu"
+        },
+        {
+          icon: "Users",
+          title: "VSHYC Youth Club",
+          description: "Youth organization focused on cultural education, leadership development, and community service.",
+          btnText: "Club Activities",
+          link: "/vshyc"
+        },
+        {
+          icon: "Heart",
+          title: "Sevabarathi Women Empowerment",
+          description: "Programs designed to support women through skill development, education, and community engagement.",
+          btnText: "Our Initiatives",
+          link: "/sevabharathi"
+        }
+      ]
+    },
+  
         bookingInfo: {
           title: "Booking Information",
           description: "To book any of our special services or for more information, please contact our temple office.",
@@ -188,21 +200,32 @@ export default function Services() {
           description: "மத சடங்குகளுக்கு அப்பால், எங்கள் கோவில் பல வழிகளில் சமூகத்திற்கு சேவை செய்ய உறுதிபூண்டுள்ளது.",
           services: [
             {
+              icon: "Home",
+              title: "சாஸ்தா சமூக மண்டபம்",
+              description: "திருமண நிகழ்வுகள், பிறந்தநாள் கொண்டாட்டங்கள் மற்றும் பல்வேறு சமூக நிகழ்வுகளுக்கு பயன்படுத்தக்கூடிய பலநோக்கு மண்டபம்.",
+              btnText: "முன்பதிவு விவரங்கள்",
+              link: "/communityhall"
+            },
+            {
+              icon: "Book",
+              title: "சமயவகுப்பு (ஆன்மீக வகுப்புகள்)",
+              description: "பக்தர்கள் மற்றும் மாணவர்கள் மறைகள் மற்றும் பாரம்பரியங்களைப் பற்றி அறிந்துகொள்ள விரிவான இந்து ஆன்மீக வகுப்புகள்.",
+              btnText: "மேலும் அறிக",
+              link: "/samayavakupu"
+            },
+            {
+              icon: "Users",
+              title: "VSHYC இளைஞர் கழகம்",
+              description: "கலாச்சார கல்வி, தலைமைத்துவ மேம்பாடு மற்றும் சமூக சேவையில் கவனம் செலுத்தும் இளைஞர் அமைப்பு.",
+              btnText: "கழக செயல்பாடுகள்",
+              link: "/vshyc"
+            },
+            {
               icon: "Heart",
-              title: "அன்னதானம் (உணவு விநியோகம்)",
-              description: "பக்தர்களுக்கும் தேவைப்படுவோருக்கும் வழக்கமான உணவு விநியோகம், குறிப்பாக திருவிழாக்கள் மற்றும் சிறப்பு சந்தர்ப்பங்களில்."
-            },
-            {
-              title: "ஆன்மீக சொற்பொழிவுகள்",
-              description: "இந்து மறைகள், தத்துவம் மற்றும் ஆன்மீக நடைமுறைகள் குறித்த வழக்கமான வகுப்புகள்."
-            },
-            {
-              title: "கலாச்சார நிகழ்ச்சிகள்",
-              description: "வழக்கமான கலாச்சார நிகழ்வுகள் மூலம் பாரம்பரிய கலைகள், இசை மற்றும் நடனத்தை ஊக்குவித்தல்."
-            },
-            {
-              title: "இளைஞர் திட்டங்கள்",
-              description: "இந்து பாரம்பரியங்கள் மற்றும் மதிப்புகள் பற்றி இளைய தலைமுறையினருக்கு கற்பிப்பதில் கவனம் செலுத்தும் சிறப்பு செயல்பாடுகள்."
+              title: "சேவாபாரதி பெண்கள் மேம்பாடு",
+              description: "திறன் மேம்பாடு, கல்வி மற்றும் சமூக ஈடுபாடு மூலம் பெண்களுக்கு ஆதரவளிக்க வடிவமைக்கப்பட்ட திட்டங்கள்.",
+              btnText: "எங்கள் முயற்சிகள்",
+              link: "/sevabharathi"
             }
           ]
         },
@@ -328,30 +351,40 @@ export default function Services() {
             </section>
             
             {/* Community Services Section */}
-            <section className="mb-16">
-              <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-orange-800 mb-4">
-                  {content[language].communityServices.title}
-                </h2>
-                <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                  {content[language].communityServices.description}
-                </p>
+            <section className="mb-16 py-12 bg-amber-50">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-orange-800 mb-4">
+            {content[language].communityServices.title}
+          </h2>
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+            {content[language].communityServices.description}
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-8">
+          {content[language].communityServices.services.map((service, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-[1.02] hover:shadow-xl">
+              <div className="p-6">
+                <div className="flex justify-center mb-4">
+                  {service.icon === 'Home' && <Home className="h-12 w-12 text-orange-600" />}
+                  {service.icon === 'Book' && <Book className="h-12 w-12 text-orange-600" />}
+                  {service.icon === 'Users' && <Users className="h-12 w-12 text-orange-600" />}
+                  {service.icon === 'Heart' && <Heart className="h-12 w-12 text-orange-600" />}
+                </div>
+                <h3 className="text-xl font-bold text-orange-800 mb-3 text-center">{service.title}</h3>
+                <p className="text-gray-700 text-center mb-6">{service.description}</p>
+                <div className="flex justify-center">
+                  <Link href={service.link} className="inline-block bg-orange-600 hover:bg-orange-700 text-white py-2 px-6 rounded-full font-medium transition duration-300">
+                    {service.btnText}
+                  </Link>
+                </div>
               </div>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                {content[language].communityServices.services.map((service, index) => (
-                  <div key={index} className="bg-white rounded-lg shadow p-6 flex flex-col">
-                    {service.icon === 'Heart' && (
-                      <div className="text-orange-600 mb-4 self-center">
-                        <Heart className="h-10 w-10" />
-                      </div>
-                    )}
-                    <h3 className="text-xl font-bold text-orange-800 mb-2 text-center">{service.title}</h3>
-                    <p className="text-gray-700 text-center">{service.description}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
             
             {/* Booking Information */}
             <section className="max-w-3xl mx-auto">

@@ -210,11 +210,7 @@ export default function ContactPage() {
             
             {/* Map Placeholder */}
             <div className="mt-8 rounded-lg overflow-hidden shadow h-64 bg-gray-100">
-              <img 
-                src="/api/placeholder/800/400" 
-                alt="Temple Location Map" 
-                className="w-full h-full object-cover"
-              />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493.52844065570247!2d77.21409717488208!3d8.280139816660908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04555ef9d13c9f%3A0xdbe59335b76aded8!2sArulmigu%20Sree%20Dharma%20Sastha%20Temple!5e0!3m2!1sen!2sin!4v1745767586278!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           

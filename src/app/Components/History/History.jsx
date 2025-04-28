@@ -143,15 +143,15 @@ export default function History() {
                   {section.content}
                 </p>
                 {section.hasImage && (
-                  <div className="bg-amber-50 p-2 rounded-lg mb-6">
-                    <div className="bg-gray-300 h-64 rounded-lg flex items-center justify-center">
+                  <div className=" p-2  rounded-lg mb-6">
+                    <div className=" h-84  rounded-lg flex items-center justify-center">
                       <p className="text-gray-600">
                         {/* Replace with actual Image component when you have images */}
                         <Image 
                           src={`/images/history-${index + 1}.jpg`} 
                           alt={section.imageAlt}
-                          width={800}
-                          height={400}
+                          width={600}
+                          height={300}
                           className="rounded-lg"
                         />
                       </p>

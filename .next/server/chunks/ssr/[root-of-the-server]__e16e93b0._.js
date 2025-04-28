@@ -41,6 +41,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-ssr] (ecmascript) <export default as Star>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.js [app-ssr] (ecmascript) <export default as Users>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gift$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Gift$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/gift.js [app-ssr] (ecmascript) <export default as Gift>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/house.js [app-ssr] (ecmascript) <export default as Home>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Book$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/book.js [app-ssr] (ecmascript) <export default as Book>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$contexts$2f$LanguageContext$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/contexts/LanguageContext.js [app-ssr] (ecmascript)");
 "use client";
@@ -150,21 +152,32 @@ function Services() {
                 description: "Beyond religious ceremonies, our temple is committed to serving the community in various ways.",
                 services: [
                     {
+                        icon: "Home",
+                        title: "Sastha Community Hall",
+                        description: "Multipurpose hall available for marriage functions, birthday celebrations, and various community events.",
+                        btnText: "Booking Details",
+                        link: "/communityhall"
+                    },
+                    {
+                        icon: "Book",
+                        title: "Samayavakupu (Spiritual Classes)",
+                        description: "Comprehensive Hindu spiritual classes for devotees and students to learn about scriptures and traditions.",
+                        btnText: "Learn More",
+                        link: "/samayavakupu"
+                    },
+                    {
+                        icon: "Users",
+                        title: "VSHYC Youth Club",
+                        description: "Youth organization focused on cultural education, leadership development, and community service.",
+                        btnText: "Club Activities",
+                        link: "/vshyc"
+                    },
+                    {
                         icon: "Heart",
-                        title: "Annadanam (Food Distribution)",
-                        description: "Regular food distribution to devotees and those in need, especially during festivals and special occasions."
-                    },
-                    {
-                        title: "Spiritual Discourses",
-                        description: "Regular classes on Hindu scriptures, philosophy, and spiritual practices."
-                    },
-                    {
-                        title: "Cultural Programs",
-                        description: "Promotion of traditional arts, music, and dance through regular cultural events."
-                    },
-                    {
-                        title: "Youth Programs",
-                        description: "Special activities focused on educating younger generations about Hindu traditions and values."
+                        title: "Sevabarathi Women Empowerment",
+                        description: "Programs designed to support women through skill development, education, and community engagement.",
+                        btnText: "Our Initiatives",
+                        link: "/sevabharathi"
                     }
                 ]
             },
@@ -273,21 +286,32 @@ function Services() {
                 description: "மத சடங்குகளுக்கு அப்பால், எங்கள் கோவில் பல வழிகளில் சமூகத்திற்கு சேவை செய்ய உறுதிபூண்டுள்ளது.",
                 services: [
                     {
+                        icon: "Home",
+                        title: "சாஸ்தா சமூக மண்டபம்",
+                        description: "திருமண நிகழ்வுகள், பிறந்தநாள் கொண்டாட்டங்கள் மற்றும் பல்வேறு சமூக நிகழ்வுகளுக்கு பயன்படுத்தக்கூடிய பலநோக்கு மண்டபம்.",
+                        btnText: "முன்பதிவு விவரங்கள்",
+                        link: "/communityhall"
+                    },
+                    {
+                        icon: "Book",
+                        title: "சமயவகுப்பு (ஆன்மீக வகுப்புகள்)",
+                        description: "பக்தர்கள் மற்றும் மாணவர்கள் மறைகள் மற்றும் பாரம்பரியங்களைப் பற்றி அறிந்துகொள்ள விரிவான இந்து ஆன்மீக வகுப்புகள்.",
+                        btnText: "மேலும் அறிக",
+                        link: "/samayavakupu"
+                    },
+                    {
+                        icon: "Users",
+                        title: "VSHYC இளைஞர் கழகம்",
+                        description: "கலாச்சார கல்வி, தலைமைத்துவ மேம்பாடு மற்றும் சமூக சேவையில் கவனம் செலுத்தும் இளைஞர் அமைப்பு.",
+                        btnText: "கழக செயல்பாடுகள்",
+                        link: "/vshyc"
+                    },
+                    {
                         icon: "Heart",
-                        title: "அன்னதானம் (உணவு விநியோகம்)",
-                        description: "பக்தர்களுக்கும் தேவைப்படுவோருக்கும் வழக்கமான உணவு விநியோகம், குறிப்பாக திருவிழாக்கள் மற்றும் சிறப்பு சந்தர்ப்பங்களில்."
-                    },
-                    {
-                        title: "ஆன்மீக சொற்பொழிவுகள்",
-                        description: "இந்து மறைகள், தத்துவம் மற்றும் ஆன்மீக நடைமுறைகள் குறித்த வழக்கமான வகுப்புகள்."
-                    },
-                    {
-                        title: "கலாச்சார நிகழ்ச்சிகள்",
-                        description: "வழக்கமான கலாச்சார நிகழ்வுகள் மூலம் பாரம்பரிய கலைகள், இசை மற்றும் நடனத்தை ஊக்குவித்தல்."
-                    },
-                    {
-                        title: "இளைஞர் திட்டங்கள்",
-                        description: "இந்து பாரம்பரியங்கள் மற்றும் மதிப்புகள் பற்றி இளைய தலைமுறையினருக்கு கற்பிப்பதில் கவனம் செலுத்தும் சிறப்பு செயல்பாடுகள்."
+                        title: "சேவாபாரதி பெண்கள் மேம்பாடு",
+                        description: "திறன் மேம்பாடு, கல்வி மற்றும் சமூக ஈடுபாடு மூலம் பெண்களுக்கு ஆதரவளிக்க வடிவமைக்கப்பட்ட திட்டங்கள்.",
+                        btnText: "எங்கள் முயற்சிகள்",
+                        link: "/sevabharathi"
                     }
                 ]
             },
@@ -308,7 +332,7 @@ function Services() {
                         children: content[language].pageTitle
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                        lineNumber: 222,
+                        lineNumber: 245,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -316,13 +340,13 @@ function Services() {
                         content: "Services offered at Sri Dharma Sastha Temple"
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                        lineNumber: 223,
+                        lineNumber: 246,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                lineNumber: 221,
+                lineNumber: 244,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -338,7 +362,7 @@ function Services() {
                                     children: content[language].heading
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                    lineNumber: 233,
+                                    lineNumber: 256,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -346,13 +370,13 @@ function Services() {
                                     children: content[language].intro
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                    lineNumber: 236,
+                                    lineNumber: 259,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                            lineNumber: 232,
+                            lineNumber: 255,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -368,7 +392,7 @@ function Services() {
                                                 children: content[language].dailyPoojas.title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                lineNumber: 245,
+                                                lineNumber: 268,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -376,13 +400,13 @@ function Services() {
                                                 children: content[language].dailyPoojas.description
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                lineNumber: 248,
+                                                lineNumber: 271,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                        lineNumber: 244,
+                                        lineNumber: 267,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -395,7 +419,7 @@ function Services() {
                                                         className: "text-orange-600 h-6 w-6 mr-3"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                        lineNumber: 255,
+                                                        lineNumber: 278,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -403,13 +427,13 @@ function Services() {
                                                         children: "Daily Schedule"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                        lineNumber: 256,
+                                                        lineNumber: 279,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                lineNumber: 254,
+                                                lineNumber: 277,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -422,7 +446,7 @@ function Services() {
                                                                 children: service.time
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                                lineNumber: 262,
+                                                                lineNumber: 285,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -430,35 +454,35 @@ function Services() {
                                                                 children: service.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                                lineNumber: 265,
+                                                                lineNumber: 288,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, index, true, {
                                                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                        lineNumber: 261,
+                                                        lineNumber: 284,
                                                         columnNumber: 23
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                lineNumber: 259,
+                                                lineNumber: 282,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                        lineNumber: 253,
+                                        lineNumber: 276,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                lineNumber: 243,
+                                lineNumber: 266,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                            lineNumber: 242,
+                            lineNumber: 265,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -472,7 +496,7 @@ function Services() {
                                             children: content[language].specialServices.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                            lineNumber: 276,
+                                            lineNumber: 299,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -480,13 +504,13 @@ function Services() {
                                             children: content[language].specialServices.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                            lineNumber: 279,
+                                            lineNumber: 302,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                    lineNumber: 275,
+                                    lineNumber: 298,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -501,34 +525,34 @@ function Services() {
                                                             className: "h-8 w-8"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                            lineNumber: 288,
+                                                            lineNumber: 311,
                                                             columnNumber: 55
                                                         }, this),
                                                         service.icon === 'Star' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
                                                             className: "h-8 w-8"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                            lineNumber: 289,
+                                                            lineNumber: 312,
                                                             columnNumber: 51
                                                         }, this),
                                                         service.icon === 'Gift' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gift$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Gift$3e$__["Gift"], {
                                                             className: "h-8 w-8"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                            lineNumber: 290,
+                                                            lineNumber: 313,
                                                             columnNumber: 51
                                                         }, this),
                                                         service.icon === 'Users' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
                                                             className: "h-8 w-8"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                            lineNumber: 291,
+                                                            lineNumber: 314,
                                                             columnNumber: 52
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                    lineNumber: 287,
+                                                    lineNumber: 310,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -538,7 +562,7 @@ function Services() {
                                                             children: service.title
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                            lineNumber: 294,
+                                                            lineNumber: 317,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -546,30 +570,30 @@ function Services() {
                                                             children: service.description
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                            lineNumber: 295,
+                                                            lineNumber: 318,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                    lineNumber: 293,
+                                                    lineNumber: 316,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, index, true, {
                                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                            lineNumber: 286,
+                                            lineNumber: 309,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                    lineNumber: 284,
+                                    lineNumber: 307,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                            lineNumber: 274,
+                            lineNumber: 297,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -585,7 +609,7 @@ function Services() {
                                                 children: content[language].festivalServices.title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                lineNumber: 306,
+                                                lineNumber: 329,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -593,13 +617,13 @@ function Services() {
                                                 children: content[language].festivalServices.description
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                lineNumber: 309,
+                                                lineNumber: 332,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                        lineNumber: 305,
+                                        lineNumber: 328,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -615,7 +639,7 @@ function Services() {
                                                                 children: festival.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                                lineNumber: 318,
+                                                                lineNumber: 341,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -623,13 +647,13 @@ function Services() {
                                                                 children: festival.timing
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                                lineNumber: 319,
+                                                                lineNumber: 342,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                        lineNumber: 317,
+                                                        lineNumber: 340,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -637,109 +661,162 @@ function Services() {
                                                         children: festival.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                        lineNumber: 323,
+                                                        lineNumber: 346,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, index, true, {
                                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                lineNumber: 316,
+                                                lineNumber: 339,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                        lineNumber: 314,
+                                        lineNumber: 337,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                lineNumber: 304,
+                                lineNumber: 327,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                            lineNumber: 303,
+                            lineNumber: 326,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                            className: "mb-16",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-center mb-8",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            className: "text-3xl font-bold text-orange-800 mb-4",
-                                            children: content[language].communityServices.title
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                            lineNumber: 333,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-lg text-gray-700 max-w-3xl mx-auto",
-                                            children: content[language].communityServices.description
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                            lineNumber: 336,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                    lineNumber: 332,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid md:grid-cols-2 gap-6",
-                                    children: content[language].communityServices.services.map((service, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-white rounded-lg shadow p-6 flex flex-col",
-                                            children: [
-                                                service.icon === 'Heart' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "text-orange-600 mb-4 self-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                                                        className: "h-10 w-10"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                        lineNumber: 346,
-                                                        columnNumber: 25
-                                                    }, this)
-                                                }, void 0, false, {
+                            className: "mb-16 py-12 bg-amber-50",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "container mx-auto px-4",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-center mb-12",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                className: "text-3xl font-bold text-orange-800 mb-4",
+                                                children: content[language].communityServices.title
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                                lineNumber: 357,
+                                                columnNumber: 11
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-lg text-gray-700 max-w-3xl mx-auto",
+                                                children: content[language].communityServices.description
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                                lineNumber: 360,
+                                                columnNumber: 11
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                        lineNumber: 356,
+                                        columnNumber: 9
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "grid md:grid-cols-2 gap-8",
+                                        children: content[language].communityServices.services.map((service, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-[1.02] hover:shadow-xl",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "p-6",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex justify-center mb-4",
+                                                            children: [
+                                                                service.icon === 'Home' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__["Home"], {
+                                                                    className: "h-12 w-12 text-orange-600"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                                                    lineNumber: 370,
+                                                                    columnNumber: 47
+                                                                }, this),
+                                                                service.icon === 'Book' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Book$3e$__["Book"], {
+                                                                    className: "h-12 w-12 text-orange-600"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                                                    lineNumber: 371,
+                                                                    columnNumber: 47
+                                                                }, this),
+                                                                service.icon === 'Users' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
+                                                                    className: "h-12 w-12 text-orange-600"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                                                    lineNumber: 372,
+                                                                    columnNumber: 48
+                                                                }, this),
+                                                                service.icon === 'Heart' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
+                                                                    className: "h-12 w-12 text-orange-600"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                                                    lineNumber: 373,
+                                                                    columnNumber: 48
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                                            lineNumber: 369,
+                                                            columnNumber: 17
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                            className: "text-xl font-bold text-orange-800 mb-3 text-center",
+                                                            children: service.title
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                                            lineNumber: 375,
+                                                            columnNumber: 17
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-gray-700 text-center mb-6",
+                                                            children: service.description
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                                            lineNumber: 376,
+                                                            columnNumber: 17
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex justify-center",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                                href: service.link,
+                                                                className: "inline-block bg-orange-600 hover:bg-orange-700 text-white py-2 px-6 rounded-full font-medium transition duration-300",
+                                                                children: service.btnText
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                                                lineNumber: 378,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                                            lineNumber: 377,
+                                                            columnNumber: 17
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                    lineNumber: 345,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-xl font-bold text-orange-800 mb-2 text-center",
-                                                    children: service.title
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                    lineNumber: 349,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-gray-700 text-center",
-                                                    children: service.description
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                    lineNumber: 350,
-                                                    columnNumber: 21
+                                                    lineNumber: 368,
+                                                    columnNumber: 15
                                                 }, this)
-                                            ]
-                                        }, index, true, {
-                                            fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                            lineNumber: 343,
-                                            columnNumber: 19
-                                        }, this))
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                    lineNumber: 341,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                                            }, index, false, {
+                                                fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                                lineNumber: 367,
+                                                columnNumber: 13
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                        lineNumber: 365,
+                                        columnNumber: 9
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/Components/Services/Services.jsx",
+                                lineNumber: 355,
+                                columnNumber: 7
+                            }, this)
+                        }, void 0, false, {
                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                            lineNumber: 331,
+                            lineNumber: 354,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -752,7 +829,7 @@ function Services() {
                                         children: content[language].bookingInfo.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                        lineNumber: 359,
+                                        lineNumber: 392,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -760,7 +837,7 @@ function Services() {
                                         children: content[language].bookingInfo.description
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                        lineNumber: 362,
+                                        lineNumber: 395,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -770,20 +847,20 @@ function Services() {
                                                 children: content[language].bookingInfo.contact
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                lineNumber: 366,
+                                                lineNumber: 399,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: content[language].bookingInfo.email
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                                lineNumber: 367,
+                                                lineNumber: 400,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                        lineNumber: 365,
+                                        lineNumber: 398,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -791,29 +868,29 @@ function Services() {
                                         children: content[language].bookingInfo.note
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                        lineNumber: 369,
+                                        lineNumber: 402,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                                lineNumber: 358,
+                                lineNumber: 391,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Services/Services.jsx",
-                            lineNumber: 357,
+                            lineNumber: 390,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/Components/Services/Services.jsx",
-                    lineNumber: 231,
+                    lineNumber: 254,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Services/Services.jsx",
-                lineNumber: 226,
+                lineNumber: 249,
                 columnNumber: 9
             }, this)
         ]
