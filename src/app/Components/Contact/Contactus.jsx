@@ -88,7 +88,7 @@ export default function ContactPage() {
     }
   };
 
-       const { language } = useLanguage();
+  const { language } = useLanguage();
  
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -141,65 +141,61 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-amber-50 pt-24 pb-16">
+    <div className="min-h-screen bg-amber-50 pt-16 md:pt-24 pb-10 md:pb-16">
       {/* Page Header */}
-      <div className="container mx-auto px-4 mb-12">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-orange-800 mb-4">
+      <div className="container mx-auto px-4 mb-8 md:mb-12">
+        <div className="text-center mb-6 md:mb-8">
+          <h1 className="text-3xl md:text-5xl font-bold text-orange-800 mb-3 md:mb-4">
             {content[language].pageTitle}
           </h1>
-          <p className="text-xl text-orange-700">
+          <p className="text-lg md:text-xl text-orange-700">
             {content[language].pageSubtitle}
           </p>
         </div>
-        
-        {/* Language Toggle */}
-        
       </div>
       
       {/* Contact Information & Form Section */}
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* Contact Information */}
-          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition-shadow">
-            <h2 className="text-2xl font-bold text-orange-800 mb-6 border-b border-orange-200 pb-3">
+          <div className="bg-white rounded-xl shadow-lg p-5 md:p-8 hover:shadow-xl transition-shadow">
+            <h2 className="text-xl md:text-2xl font-bold text-orange-800 mb-4 md:mb-6 border-b border-orange-200 pb-3">
               {content[language].address}
             </h2>
             
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-6">
               <div className="flex items-start">
-                <MapPin className="text-orange-600 h-6 w-6 mr-4 mt-1 flex-shrink-0" />
+                <MapPin className="text-orange-600 h-5 w-5 md:h-6 md:w-6 mr-3 md:mr-4 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-700">
-                    Sri Ayyappan Temple<br />
-                    123 Temple Street<br />
-                    Chennai, Tamil Nadu 600001<br />
-                    India
+                  <p className="text-sm md:text-base text-gray-700">
+                    Sree Dharmasastha Temple,<br/>
+                  Kavampattuvillai,Nelveli,<br/>
+                  Elavuvillai Post<br/>Pin:629171,<br/>Kanyakumari district <br/>Tamilnadu,India
                   </p>
                 </div>
               </div>
               
               <div className="flex items-center">
-                <Phone className="text-orange-600 h-6 w-6 mr-4 flex-shrink-0" />
+                <Phone className="text-orange-600 h-5 w-5 md:h-6 md:w-6 mr-3 md:mr-4 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-gray-800">+91 98765 43210</p>
-                  <p className="text-sm text-gray-600">+91 87654 32109</p>
+                  <p className="font-medium text-gray-800 text-sm md:text-base">+91 98765 43210</p>
+                  <p className="text-xs md:text-sm text-gray-600">+91 87654 32109</p>
                 </div>
               </div>
               
               <div className="flex items-center">
-                <Mail className="text-orange-600 h-6 w-6 mr-4 flex-shrink-0" />
+                <Mail className="text-orange-600 h-5 w-5 md:h-6 md:w-6 mr-3 md:mr-4 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-gray-800">info@ayyappantemple.org</p>
-                  <p className="text-sm text-gray-600">contact@ayyappantemple.org</p>
+                  <p className="font-medium text-gray-800 text-sm md:text-base">info@sredharmasasthatemple.org</p>
+                  <p className="text-xs md:text-sm text-gray-600">contact@sreedharmasasthatemple.org</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <Clock className="text-orange-600 h-6 w-6 mr-4 mt-1 flex-shrink-0" />
+                <Clock className="text-orange-600 h-5 w-5 md:h-6 md:w-6 mr-3 md:mr-4 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-gray-800 mb-2">{content[language].openingHours}</p>
-                  <ul className="text-gray-700 space-y-1">
+                  <p className="font-medium text-gray-800 mb-1 md:mb-2 text-sm md:text-base">{content[language].openingHours}</p>
+                  <ul className="text-gray-700 space-y-1 text-sm md:text-base">
                     {content[language].hours.map((hour, index) => (
                       <li key={index}>{hour}</li>
                     ))}
@@ -208,35 +204,42 @@ export default function ContactPage() {
               </div>
             </div>
             
-            {/* Map Placeholder */}
-            <div className="mt-8 rounded-lg overflow-hidden shadow h-64 bg-gray-100">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493.52844065570247!2d77.21409717488208!3d8.280139816660908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04555ef9d13c9f%3A0xdbe59335b76aded8!2sArulmigu%20Sree%20Dharma%20Sastha%20Temple!5e0!3m2!1sen!2sin!4v1745767586278!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            {/* Map - Responsive */}
+            <div className="mt-6 md:mt-8 rounded-lg overflow-hidden shadow h-56 md:h-64">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493.52844065570247!2d77.21409717488208!3d8.280139816660908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04555ef9d13c9f%3A0xdbe59335b76aded8!2sArulmigu%20Sree%20Dharma%20Sastha%20Temple!5e0!3m2!1sen!2sin!4v1745767586278!5m2!1sen!2sin" 
+                className="w-full h-full" 
+                style={{border:0}} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade">
+              </iframe>
             </div>
           </div>
           
           {/* Contact Form */}
-          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition-shadow">
-            <h2 className="text-2xl font-bold text-orange-800 mb-6 border-b border-orange-200 pb-3">
+          <div className="bg-white rounded-xl shadow-lg p-5 md:p-8 hover:shadow-xl transition-shadow">
+            <h2 className="text-xl md:text-2xl font-bold text-orange-800 mb-4 md:mb-6 border-b border-orange-200 pb-3">
               {content[language].contactForm}
             </h2>
             
             {isSubmitted ? (
-              <div className="py-12 text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
-                  <Send className="text-green-600 h-8 w-8" />
+              <div className="py-8 md:py-12 text-center">
+                <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-green-100 rounded-full mb-3 md:mb-4">
+                  <Send className="text-green-600 h-6 w-6 md:h-8 md:w-8" />
                 </div>
-                <p className="text-xl font-medium text-green-600">{content[language].successMessage}</p>
+                <p className="text-lg md:text-xl font-medium text-green-600">{content[language].successMessage}</p>
                 <button
                   onClick={() => setIsSubmitted(false)}
-                  className="mt-6 px-4 py-2 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition-colors"
+                  className="mt-4 md:mt-6 px-4 py-2 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition-colors"
                 >
                   {content[language].contactForm}
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                 <div>
-                  <label className="block text-gray-700 font-medium mb-2">
+                  <label className="block text-gray-700 font-medium mb-1 md:mb-2 text-sm md:text-base">
                     {content[language].formFields.name} <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -245,17 +248,17 @@ export default function ContactPage() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder={content[language].formPlaceholders.name}
-                    className={`w-full px-4 py-3 rounded-lg border ${
+                    className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-lg border text-sm md:text-base ${
                       formErrors.name ? 'border-red-500' : 'border-gray-300'
                     } focus:outline-none focus:ring-2 focus:ring-orange-500`}
                   />
                   {formErrors.name && (
-                    <p className="text-red-500 text-sm mt-1">{formErrors.name}</p>
+                    <p className="text-red-500 text-xs md:text-sm mt-1">{formErrors.name}</p>
                   )}
                 </div>
                 
                 <div>
-                  <label className="block text-gray-700 font-medium mb-2">
+                  <label className="block text-gray-700 font-medium mb-1 md:mb-2 text-sm md:text-base">
                     {content[language].formFields.email} <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -264,17 +267,17 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder={content[language].formPlaceholders.email}
-                    className={`w-full px-4 py-3 rounded-lg border ${
+                    className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-lg border text-sm md:text-base ${
                       formErrors.email ? 'border-red-500' : 'border-gray-300'
                     } focus:outline-none focus:ring-2 focus:ring-orange-500`}
                   />
                   {formErrors.email && (
-                    <p className="text-red-500 text-sm mt-1">{formErrors.email}</p>
+                    <p className="text-red-500 text-xs md:text-sm mt-1">{formErrors.email}</p>
                   )}
                 </div>
                 
                 <div>
-                  <label className="block text-gray-700 font-medium mb-2">
+                  <label className="block text-gray-700 font-medium mb-1 md:mb-2 text-sm md:text-base">
                     {content[language].formFields.phone}
                   </label>
                   <input
@@ -283,12 +286,12 @@ export default function ContactPage() {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder={content[language].formPlaceholders.phone}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    className="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm md:text-base"
                   />
                 </div>
                 
                 <div>
-                  <label className="block text-gray-700 font-medium mb-2">
+                  <label className="block text-gray-700 font-medium mb-1 md:mb-2 text-sm md:text-base">
                     {content[language].formFields.message} <span className="text-red-500">*</span>
                   </label>
                   <textarea
@@ -296,13 +299,13 @@ export default function ContactPage() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder={content[language].formPlaceholders.message}
-                    rows="6"
-                    className={`w-full px-4 py-3 rounded-lg border ${
+                    rows="5"
+                    className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-lg border text-sm md:text-base ${
                       formErrors.message ? 'border-red-500' : 'border-gray-300'
                     } focus:outline-none focus:ring-2 focus:ring-orange-500`}
                   ></textarea>
                   {formErrors.message && (
-                    <p className="text-red-500 text-sm mt-1">{formErrors.message}</p>
+                    <p className="text-red-500 text-xs md:text-sm mt-1">{formErrors.message}</p>
                   )}
                 </div>
                 
@@ -310,13 +313,13 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`w-full py-3 rounded-lg bg-orange-600 text-white font-medium hover:bg-orange-700 transition-colors flex items-center justify-center ${
+                    className={`w-full py-2 md:py-3 rounded-lg bg-orange-600 text-white font-medium text-sm md:text-base hover:bg-orange-700 transition-colors flex items-center justify-center ${
                       isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
                     }`}
                   >
                     {isSubmitting ? (
                       <>
-                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <svg className="animate-spin -ml-1 mr-2 md:mr-3 h-4 w-4 md:h-5 md:w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                           <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
@@ -324,7 +327,7 @@ export default function ContactPage() {
                       </>
                     ) : (
                       <>
-                        <Send className="h-5 w-5 mr-2" />
+                        <Send className="h-4 w-4 md:h-5 md:w-5 mr-2" />
                         {content[language].sendMessage}
                       </>
                     )}

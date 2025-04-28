@@ -152,15 +152,15 @@ function ContactPage() {
         }, 1500);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen bg-amber-50 pt-24 pb-16",
+        className: "min-h-screen bg-amber-50 pt-16 md:pt-24 pb-10 md:pb-16",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container mx-auto px-4 mb-12",
+                className: "container mx-auto px-4 mb-8 md:mb-12",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-center mb-8",
+                    className: "text-center mb-6 md:mb-8",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-4xl md:text-5xl font-bold text-orange-800 mb-4",
+                            className: "text-3xl md:text-5xl font-bold text-orange-800 mb-3 md:mb-4",
                             children: content[language].pageTitle
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
@@ -168,7 +168,7 @@ function ContactPage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-xl text-orange-700",
+                            className: "text-lg md:text-xl text-orange-700",
                             children: content[language].pageSubtitle
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
@@ -189,210 +189,221 @@ function ContactPage() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container mx-auto px-4",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid md:grid-cols-2 gap-12",
+                    className: "grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition-shadow",
+                            className: "bg-white rounded-xl shadow-lg p-5 md:p-8 hover:shadow-xl transition-shadow",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-2xl font-bold text-orange-800 mb-6 border-b border-orange-200 pb-3",
+                                    className: "text-xl md:text-2xl font-bold text-orange-800 mb-4 md:mb-6 border-b border-orange-200 pb-3",
                                     children: content[language].address
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                    lineNumber: 165,
+                                    lineNumber: 162,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "space-y-6",
+                                    className: "space-y-4 md:space-y-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-start",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                                    className: "text-orange-600 h-6 w-6 mr-4 mt-1 flex-shrink-0"
+                                                    className: "text-orange-600 h-5 w-5 md:h-6 md:w-6 mr-3 md:mr-4 mt-1 flex-shrink-0"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 171,
+                                                    lineNumber: 168,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-gray-700",
+                                                        className: "text-sm md:text-base text-gray-700",
                                                         children: [
-                                                            "Sri Ayyappan Temple",
+                                                            "Sree Dharmasastha Temple,",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                                lineNumber: 174,
-                                                                columnNumber: 40
+                                                                lineNumber: 171,
+                                                                columnNumber: 46
                                                             }, this),
-                                                            "123 Temple Street",
+                                                            "Kavampattuvillai,Nelveli,",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                                lineNumber: 175,
-                                                                columnNumber: 38
+                                                                lineNumber: 172,
+                                                                columnNumber: 44
                                                             }, this),
-                                                            "Chennai, Tamil Nadu 600001",
+                                                            "Elavuvillai Post",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                                lineNumber: 176,
-                                                                columnNumber: 47
+                                                                lineNumber: 173,
+                                                                columnNumber: 35
                                                             }, this),
-                                                            "India"
+                                                            "Pin:629171,",
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
+                                                                lineNumber: 173,
+                                                                columnNumber: 51
+                                                            }, this),
+                                                            "Kanyakumari district ",
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
+                                                                lineNumber: 173,
+                                                                columnNumber: 77
+                                                            }, this),
+                                                            "Tamilnadu,India"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                        lineNumber: 173,
+                                                        lineNumber: 170,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 172,
+                                                    lineNumber: 169,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                            lineNumber: 170,
+                                            lineNumber: 167,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-center",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
-                                                    className: "text-orange-600 h-6 w-6 mr-4 flex-shrink-0"
+                                                    className: "text-orange-600 h-5 w-5 md:h-6 md:w-6 mr-3 md:mr-4 flex-shrink-0"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 183,
+                                                    lineNumber: 179,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "font-medium text-gray-800",
+                                                            className: "font-medium text-gray-800 text-sm md:text-base",
                                                             children: "+91 98765 43210"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                            lineNumber: 185,
+                                                            lineNumber: 181,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-sm text-gray-600",
+                                                            className: "text-xs md:text-sm text-gray-600",
                                                             children: "+91 87654 32109"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                            lineNumber: 186,
+                                                            lineNumber: 182,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 184,
+                                                    lineNumber: 180,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                            lineNumber: 182,
+                                            lineNumber: 178,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-center",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
-                                                    className: "text-orange-600 h-6 w-6 mr-4 flex-shrink-0"
+                                                    className: "text-orange-600 h-5 w-5 md:h-6 md:w-6 mr-3 md:mr-4 flex-shrink-0"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 191,
+                                                    lineNumber: 187,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "font-medium text-gray-800",
-                                                            children: "info@ayyappantemple.org"
+                                                            className: "font-medium text-gray-800 text-sm md:text-base",
+                                                            children: "info@sredharmasasthatemple.org"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                            lineNumber: 193,
+                                                            lineNumber: 189,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-sm text-gray-600",
-                                                            children: "contact@ayyappantemple.org"
+                                                            className: "text-xs md:text-sm text-gray-600",
+                                                            children: "contact@sreedharmasasthatemple.org"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                            lineNumber: 194,
+                                                            lineNumber: 190,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 192,
+                                                    lineNumber: 188,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                            lineNumber: 190,
+                                            lineNumber: 186,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-start",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                                    className: "text-orange-600 h-6 w-6 mr-4 mt-1 flex-shrink-0"
+                                                    className: "text-orange-600 h-5 w-5 md:h-6 md:w-6 mr-3 md:mr-4 mt-1 flex-shrink-0"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 199,
+                                                    lineNumber: 195,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "font-medium text-gray-800 mb-2",
+                                                            className: "font-medium text-gray-800 mb-1 md:mb-2 text-sm md:text-base",
                                                             children: content[language].openingHours
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                            lineNumber: 201,
+                                                            lineNumber: 197,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                            className: "text-gray-700 space-y-1",
+                                                            className: "text-gray-700 space-y-1 text-sm md:text-base",
                                                             children: content[language].hours.map((hour, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: hour
                                                                 }, index, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                                    lineNumber: 204,
+                                                                    lineNumber: 200,
                                                                     columnNumber: 23
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                            lineNumber: 202,
+                                                            lineNumber: 198,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 200,
+                                                    lineNumber: 196,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                            lineNumber: 198,
+                                            lineNumber: 194,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                    lineNumber: 169,
+                                    lineNumber: 166,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mt-8 rounded-lg overflow-hidden shadow h-64 bg-gray-100",
+                                    className: "mt-6 md:mt-8 rounded-lg overflow-hidden shadow h-56 md:h-64",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
                                         src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493.52844065570247!2d77.21409717488208!3d8.280139816660908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04555ef9d13c9f%3A0xdbe59335b76aded8!2sArulmigu%20Sree%20Dharma%20Sastha%20Temple!5e0!3m2!1sen!2sin!4v1745767586278!5m2!1sen!2sin",
-                                        width: "600",
-                                        height: "450",
+                                        className: "w-full h-full",
                                         style: {
                                             border: 0
                                         },
@@ -401,78 +412,78 @@ function ContactPage() {
                                         referrerPolicy: "no-referrer-when-downgrade"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                        lineNumber: 213,
-                                        columnNumber: 13
+                                        lineNumber: 209,
+                                        columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                    lineNumber: 212,
+                                    lineNumber: 208,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                            lineNumber: 164,
+                            lineNumber: 161,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition-shadow",
+                            className: "bg-white rounded-xl shadow-lg p-5 md:p-8 hover:shadow-xl transition-shadow",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-2xl font-bold text-orange-800 mb-6 border-b border-orange-200 pb-3",
+                                    className: "text-xl md:text-2xl font-bold text-orange-800 mb-4 md:mb-6 border-b border-orange-200 pb-3",
                                     children: content[language].contactForm
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                    lineNumber: 219,
+                                    lineNumber: 222,
                                     columnNumber: 13
                                 }, this),
                                 isSubmitted ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "py-12 text-center",
+                                    className: "py-8 md:py-12 text-center",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4",
+                                            className: "inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-green-100 rounded-full mb-3 md:mb-4",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
-                                                className: "text-green-600 h-8 w-8"
+                                                className: "text-green-600 h-6 w-6 md:h-8 md:w-8"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                lineNumber: 226,
+                                                lineNumber: 229,
                                                 columnNumber: 19
                                             }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                            lineNumber: 225,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-xl font-medium text-green-600",
-                                            children: content[language].successMessage
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
                                             lineNumber: 228,
                                             columnNumber: 17
                                         }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-lg md:text-xl font-medium text-green-600",
+                                            children: content[language].successMessage
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
+                                            lineNumber: 231,
+                                            columnNumber: 17
+                                        }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>setIsSubmitted(false),
-                                            className: "mt-6 px-4 py-2 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition-colors",
+                                            className: "mt-4 md:mt-6 px-4 py-2 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition-colors",
                                             children: content[language].contactForm
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                            lineNumber: 229,
+                                            lineNumber: 232,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                    lineNumber: 224,
+                                    lineNumber: 227,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                     onSubmit: handleSubmit,
-                                    className: "space-y-6",
+                                    className: "space-y-4 md:space-y-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "block text-gray-700 font-medium mb-2",
+                                                    className: "block text-gray-700 font-medium mb-1 md:mb-2 text-sm md:text-base",
                                                     children: [
                                                         content[language].formFields.name,
                                                         " ",
@@ -481,13 +492,13 @@ function ContactPage() {
                                                             children: "*"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                            lineNumber: 240,
+                                                            lineNumber: 243,
                                                             columnNumber: 57
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 239,
+                                                    lineNumber: 242,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -496,30 +507,30 @@ function ContactPage() {
                                                     value: formData.name,
                                                     onChange: handleChange,
                                                     placeholder: content[language].formPlaceholders.name,
-                                                    className: `w-full px-4 py-3 rounded-lg border ${formErrors.name ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-orange-500`
+                                                    className: `w-full px-3 md:px-4 py-2 md:py-3 rounded-lg border text-sm md:text-base ${formErrors.name ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-orange-500`
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 242,
+                                                    lineNumber: 245,
                                                     columnNumber: 19
                                                 }, this),
                                                 formErrors.name && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-red-500 text-sm mt-1",
+                                                    className: "text-red-500 text-xs md:text-sm mt-1",
                                                     children: formErrors.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 253,
+                                                    lineNumber: 256,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                            lineNumber: 238,
+                                            lineNumber: 241,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "block text-gray-700 font-medium mb-2",
+                                                    className: "block text-gray-700 font-medium mb-1 md:mb-2 text-sm md:text-base",
                                                     children: [
                                                         content[language].formFields.email,
                                                         " ",
@@ -528,13 +539,13 @@ function ContactPage() {
                                                             children: "*"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                            lineNumber: 259,
+                                                            lineNumber: 262,
                                                             columnNumber: 58
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 258,
+                                                    lineNumber: 261,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -543,34 +554,34 @@ function ContactPage() {
                                                     value: formData.email,
                                                     onChange: handleChange,
                                                     placeholder: content[language].formPlaceholders.email,
-                                                    className: `w-full px-4 py-3 rounded-lg border ${formErrors.email ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-orange-500`
+                                                    className: `w-full px-3 md:px-4 py-2 md:py-3 rounded-lg border text-sm md:text-base ${formErrors.email ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-orange-500`
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 261,
+                                                    lineNumber: 264,
                                                     columnNumber: 19
                                                 }, this),
                                                 formErrors.email && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-red-500 text-sm mt-1",
+                                                    className: "text-red-500 text-xs md:text-sm mt-1",
                                                     children: formErrors.email
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 272,
+                                                    lineNumber: 275,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                            lineNumber: 257,
+                                            lineNumber: 260,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "block text-gray-700 font-medium mb-2",
+                                                    className: "block text-gray-700 font-medium mb-1 md:mb-2 text-sm md:text-base",
                                                     children: content[language].formFields.phone
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 277,
+                                                    lineNumber: 280,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -579,22 +590,22 @@ function ContactPage() {
                                                     value: formData.phone,
                                                     onChange: handleChange,
                                                     placeholder: content[language].formPlaceholders.phone,
-                                                    className: "w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                                    className: "w-full px-3 md:px-4 py-2 md:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm md:text-base"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 280,
+                                                    lineNumber: 283,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                            lineNumber: 276,
+                                            lineNumber: 279,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "block text-gray-700 font-medium mb-2",
+                                                    className: "block text-gray-700 font-medium mb-1 md:mb-2 text-sm md:text-base",
                                                     children: [
                                                         content[language].formFields.message,
                                                         " ",
@@ -603,13 +614,13 @@ function ContactPage() {
                                                             children: "*"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                            lineNumber: 292,
+                                                            lineNumber: 295,
                                                             columnNumber: 60
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 291,
+                                                    lineNumber: 294,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -617,36 +628,36 @@ function ContactPage() {
                                                     value: formData.message,
                                                     onChange: handleChange,
                                                     placeholder: content[language].formPlaceholders.message,
-                                                    rows: "6",
-                                                    className: `w-full px-4 py-3 rounded-lg border ${formErrors.message ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-orange-500`
+                                                    rows: "5",
+                                                    className: `w-full px-3 md:px-4 py-2 md:py-3 rounded-lg border text-sm md:text-base ${formErrors.message ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-orange-500`
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 294,
+                                                    lineNumber: 297,
                                                     columnNumber: 19
                                                 }, this),
                                                 formErrors.message && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-red-500 text-sm mt-1",
+                                                    className: "text-red-500 text-xs md:text-sm mt-1",
                                                     children: formErrors.message
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                    lineNumber: 305,
+                                                    lineNumber: 308,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                            lineNumber: 290,
+                                            lineNumber: 293,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 type: "submit",
                                                 disabled: isSubmitting,
-                                                className: `w-full py-3 rounded-lg bg-orange-600 text-white font-medium hover:bg-orange-700 transition-colors flex items-center justify-center ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`,
+                                                className: `w-full py-2 md:py-3 rounded-lg bg-orange-600 text-white font-medium text-sm md:text-base hover:bg-orange-700 transition-colors flex items-center justify-center ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`,
                                                 children: isSubmitting ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                            className: "animate-spin -ml-1 mr-3 h-5 w-5 text-white",
+                                                            className: "animate-spin -ml-1 mr-2 md:mr-3 h-4 w-4 md:h-5 md:w-5 text-white",
                                                             xmlns: "http://www.w3.org/2000/svg",
                                                             fill: "none",
                                                             viewBox: "0 0 24 24",
@@ -660,7 +671,7 @@ function ContactPage() {
                                                                     strokeWidth: "4"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                                    lineNumber: 320,
+                                                                    lineNumber: 323,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -669,13 +680,13 @@ function ContactPage() {
                                                                     d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                                    lineNumber: 321,
+                                                                    lineNumber: 324,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                            lineNumber: 319,
+                                                            lineNumber: 322,
                                                             columnNumber: 25
                                                         }, this),
                                                         content[language].sending
@@ -683,10 +694,10 @@ function ContactPage() {
                                                 }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
-                                                            className: "h-5 w-5 mr-2"
+                                                            className: "h-4 w-4 md:h-5 md:w-5 mr-2"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                            lineNumber: 327,
+                                                            lineNumber: 330,
                                                             columnNumber: 25
                                                         }, this),
                                                         content[language].sendMessage
@@ -694,35 +705,35 @@ function ContactPage() {
                                                 }, void 0, true)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                                lineNumber: 310,
+                                                lineNumber: 313,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                            lineNumber: 309,
+                                            lineNumber: 312,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                                    lineNumber: 237,
+                                    lineNumber: 240,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                            lineNumber: 218,
+                            lineNumber: 221,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                    lineNumber: 162,
+                    lineNumber: 159,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Contact/Contactus.jsx",
-                lineNumber: 161,
+                lineNumber: 158,
                 columnNumber: 7
             }, this)
         ]
