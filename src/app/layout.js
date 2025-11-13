@@ -4,6 +4,8 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Script from "next/script";
+import { Suspense } from "react";
+
 import GATracker from './ga-tracker';
 const inter = Inter({ subsets: ['latin'] });
 
@@ -57,7 +59,10 @@ export default function RootLayout({ children }) {
         />
         </head>
              <body className={inter.className}>
-<GATracker />
+              <Suspense>
+          <GATracker />
+        </Suspense>
+
         <LanguageProvider>
           <Header/>
           {children}

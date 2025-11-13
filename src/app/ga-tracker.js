@@ -8,7 +8,8 @@ export default function GATracker() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    const url = pathname + (searchParams.toString() ? `?${searchParams.toString()}` : "");
+    const url =
+      pathname + (searchParams.toString() ? `?${searchParams.toString()}` : "");
     pageview(url);
   }, [pathname, searchParams]);
 
