@@ -60,9 +60,8 @@ export default function RootLayout({ children }) {
         </head>
              <body className={inter.className}>
               <Suspense>
-          <GATracker />
-        </Suspense>
-
+              <GATracker />
+             </Suspense>
         <LanguageProvider>
           <Header/>
           {children}
