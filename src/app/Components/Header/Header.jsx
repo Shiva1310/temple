@@ -10,7 +10,7 @@ const Header = () => {
 
       const content = {
         english: {
-            navLinks: ['Home', 'History', 'Services', 'Gallery', 'Construction', 'ContactUs'],
+            navLinks: ['Home', 'History', 'Services', 'Gallery', 'Construction', 'ContactUs','Matrimony'],
           heroTitle: 'Sri Dharma Sastha Temple Kavampatuvillai',
           heroSubtitle: 'A Sacred Place of Worship and Community',
           welcome: 'Welcome to our Temple',

@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center">
               <Mail className="text-amber-200 h-4 w-4 mr-2" />
-              <span>info@sasthatemple.org</span>
+              <span>kavampattuvillaisastha@gmail.com</span>
             </div>
             <div className="flex items-center">
               <MapPin className="text-amber-200 h-4 w-4 mr-2" />

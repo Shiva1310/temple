@@ -2,17 +2,28 @@
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 import { useLanguage } from '@/app/contexts/LanguageContext';
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    message: ''
+    message: '',
+    captchaToken: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formErrors, setFormErrors] = useState({});
+const handleCaptchaChange = (token) => {
+
+    setFormData((prev) => ({
+  ...prev,
+  captchaToken: token,
+}));
+
+  };
   
   // Language content
   const content = {
@@ -118,27 +129,48 @@ export default function ContactPage() {
     return Object.keys(errors).length === 0;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    if (!validateForm()) {
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  if (!validateForm()) return;
+if (!formData.captchaToken) {
+      alert("Please verify that you are not a robot.");
       return;
     }
-    
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+  setIsSubmitting(true);
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
       setIsSubmitted(true);
       setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: ''
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+        captchaToken: "",
       });
-    }, 1500);
-  };
+
+      grecaptcha.reset(); // 🔥 VERY IMPORTANT
+
+    } else {
+      alert(data.error || "Something went wrong while sending the email");
+    }
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    alert("Failed to send email. Please try again later.");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
 
   return (
     <div className="min-h-screen bg-amber-50 pt-16 md:pt-24 pb-10 md:pb-16">
@@ -310,6 +342,10 @@ export default function ContactPage() {
                 </div>
                 
                 <div>
+                  <ReCAPTCHA
+                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                onChange={handleCaptchaChange}
+              />
                   <button
                     type="submit"
                     disabled={isSubmitting}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sree-dharma-sastha-kavampattuvillai.vercel.app/sitemap.xml
