@@ -6,7 +6,7 @@ import { useLanguage } from '@/app/contexts/LanguageContext';
 const Footer = () => {
     const content = {
         english: {
-          navLinks: ['Home', 'Gallery',  'Construction', 'Contactus'],
+          navLinks: ['Home', 'Contactus','History','Services','Matrimony'],
           heroTitle: 'Sri Dharma Sastha Temple Kavampatuvillai',
          
                   address:"Kavampattuvillai,Nelveli,\nElavuvillai Post \nPin:629171 ,\nKanyakumari district \nTamilnadu,India"
@@ -68,9 +68,34 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="border-t border-orange-700 mt-8 pt-8 text-center text-amber-100">
-        <p>&copy; 2025 Sri Dharma Sastha Temple. All rights reserved.</p>
-      </div>
+      <div className="border-t border-orange-700 mt-8 pt-6 text-center text-amber-100">
+          {/* Copyright + Credits */}
+          <p className="text-sm opacity-80">
+            © 2025 Sri Dharma Sastha Temple. All rights reserved.
+          </p>
+
+          <p className="text-sm mt-2 opacity-80">
+            📸 <span className="font-medium">Images and copyright owned by</span>{" "}
+            <a
+              href="mailto:rshivakumar1310@gmail.com"
+              className="underline hover:text-amber-200"
+            >
+              rshivakumar1310@gmail.com
+            </a>
+          </p>
+
+         
+
+          <p className="text-sm mt-2 opacity-80">
+            📞 For website development, contact{" "}
+            <a
+              href="mailto:rshivakumar1310@gmail.com"
+              className="underline font-medium hover:text-amber-200"
+            >
+              rshivakumar1310@gmail.com
+            </a>
+          </p>
+        </div>
     </div>
   </footer>
   )

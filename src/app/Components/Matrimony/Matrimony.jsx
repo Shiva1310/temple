@@ -2,9 +2,11 @@
 import { useState } from 'react';
 import { Heart, Upload, X, CheckCircle, User, Users, Briefcase, Home, Phone, Mail, Ruler, Scale, Palette, DollarSign, FileText } from 'lucide-react';
 import ReCAPTCHA from "react-google-recaptcha";
+import { useLanguage } from '@/app/contexts/LanguageContext';
 
 export default function MatrimonialPage() {
-  const [currentLanguage, setCurrentLanguage] = useState('english');
+    const { language: currentLanguage, toggleLanguage } = useLanguage();
+  
   const [formData, setFormData] = useState({
     lookingFor: '',
     name: '',
@@ -364,9 +366,7 @@ console.log("response:", response);
     }
   };
 
-  const toggleLanguage = () => {
-    setCurrentLanguage(currentLanguage === 'english' ? 'tamil' : 'english');
-  };
+  
 
   return (
     <div className="min-h-screen bg-amber-50">
@@ -374,12 +374,7 @@ console.log("response:", response);
         <div className="container mx-auto text-center">
           <Heart className="h-16 w-16 mx-auto mb-4" />
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.title}</h1>
-          <button
-            onClick={toggleLanguage}
-            className="mt-4 bg-white text-orange-600 px-6 py-2 rounded-lg font-medium hover:bg-orange-50 transition-colors"
-          >
-            {currentLanguage === 'english' ? 'தமிழ்' : 'English'}
-          </button>
+          
         </div>
       </div>
 
@@ -1130,11 +1125,7 @@ console.log("response:", response);
         </div>
       </section>
 
-      <footer className="bg-orange-800 text-white py-8 px-4">
-        <div className="container mx-auto text-center">
-          <p className="text-sm">© 2025 Sri Dharma Sastha Temple. All rights reserved.</p>
-        </div>
-      </footer>
+      
     </div>
   );
 }
