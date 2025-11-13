@@ -218,8 +218,10 @@ if (!formData.captchaToken) {
               <div className="flex items-center">
                 <Mail className="text-orange-600 h-5 w-5 md:h-6 md:w-6 mr-3 md:mr-4 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-gray-800 text-sm md:text-base">info@sredharmasasthatemple.org</p>
-                  <p className="text-xs md:text-sm text-gray-600">contact@sreedharmasasthatemple.org</p>
+                  <p className="font-medium text-gray-800 text-sm md:text-base">
+kavampattuvillaisastha@gmail.com</p>
+                  <p className="text-xs md:text-sm text-gray-600">
+kavampattuvillaisastha@gmail.com</p>
                 </div>
               </div>
               
