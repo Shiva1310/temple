@@ -16,9 +16,10 @@ export default function EventBanner() {
     }, 500);
 
     // Auto-close after 10 seconds
-    const closeTimer = setTimeout(() => {
-      handleClose();
-    }, 10000000000);
+   const closeTimer = setTimeout(() => {
+  handleClose();
+}, 10000);
+
 
     // Create realistic cracker effects - multiple types
     const crackerInterval = setInterval(() => {
