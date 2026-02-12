@@ -18,7 +18,7 @@ export default function EventBanner() {
     // Auto-close after 10 seconds
     const closeTimer = setTimeout(() => {
       handleClose();
-    }, 10500);
+    }, 10000000000);
 
     // Create realistic cracker effects - multiple types
     const crackerInterval = setInterval(() => {
@@ -107,7 +107,7 @@ export default function EventBanner() {
           <div className={styles.leftImage}>
             <div className={styles.imageContainer}>
               <Image
-                src="/images/koil-1.png"
+                src="/images/templek.png"
                 alt="Sri Dharma Sastha Temple"
                 fill
                 className={styles.posterImg}
@@ -153,7 +153,7 @@ export default function EventBanner() {
           <div className={styles.rightImage}>
             <div className={styles.imageContainer}>
               <Image
-                src="/images/hall-2.jpg"
+                src="/images/mandabam.png"
                 alt="Sastha Kalai Arangam"
                 fill
                 className={styles.posterImg}

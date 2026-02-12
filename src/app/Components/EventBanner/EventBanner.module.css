@@ -27,8 +27,8 @@
 /* ===== BANNER ===== */
 .banner {
     position: relative;
-    width: 92%;
-    max-width: 950px;
+    width: 95%;
+    max-width: 1400px;
     max-height: 90vh;
     background: linear-gradient(135deg, #fff8e1 0%, #ffe0b2 30%, #ffcc80 60%, #fff3e0 100%);
     border-radius: 20px;
@@ -111,15 +111,15 @@
     display: flex;
     align-items: stretch;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 0.5rem 1rem;
-    min-height: 320px;
+    min-height: 420px;
 }
 
 /* ===== IMAGES ===== */
 .leftImage,
 .rightImage {
-    flex: 0 0 200px;
+    flex: 0 0 380px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,8 +127,8 @@
 
 .imageContainer {
     position: relative;
-    width: 180px;
-    height: 240px;
+    width: 480px;
+    height: 400px;
     border-radius: 16px;
     overflow: hidden;
     border: 3px solid #ffd700;
@@ -138,6 +138,7 @@
 
 .posterImg {
     object-fit: cover;
+    object-position: center;
     border-radius: 13px;
 }
 
@@ -153,7 +154,7 @@
 
 /* ===== CENTER CONTENT ===== */
 .centerContent {
-    flex: 1;
+    flex: 0 1 450px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,7 +164,7 @@
 .decorativeFrame {
     text-align: center;
     padding: 1rem;
-    border: 2px solid #d4a017;
+    border: 1px solid #d4a017;
     border-radius: 12px;
     background: linear-gradient(135deg, rgba(255, 248, 225, 0.7), rgba(255, 224, 178, 0.7));
     width: 100%;
@@ -171,7 +172,7 @@
 
 .frameTop,
 .frameBottom {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #d4a017;
     animation: sparkle 2s ease-in-out infinite alternate;
 }
@@ -446,8 +447,8 @@
     }
 
     .imageContainer {
-        width: 140px;
-        height: 200px;
+        width: 180px;
+        height: 220px;
     }
 
     .mainEvent {
@@ -464,103 +465,195 @@
 }
 
 @media (max-width: 768px) {
-    .posterLayout {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.8rem;
-        padding: 0.5rem;
-    }
-
-    .leftImage,
-    .rightImage {
-        flex: none;
-        width: 100%;
-    }
-
-    .imageContainer {
-        width: 100%;
-        height: 160px;
-        border-radius: 12px;
-    }
-
-    .leftImage .imageContainer,
-    .rightImage .imageContainer {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .mainEvent {
-        font-size: 1.3rem;
-    }
-
-    .subEvent {
-        font-size: 1.1rem;
-    }
-
-    .dateHighlight {
-        font-size: 1.4rem;
-    }
-
-    .inviteText {
-        font-size: 0.9rem;
+    .overlay {
+        padding: 0;
     }
 
     .banner {
-        padding: 0.4rem;
-        max-height: 95vh;
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        border-radius: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .posterLayout {
+        flex: 1;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 0;
+        padding: 0;
+        min-height: auto;
+        overflow-y: auto;
+    }
+
+    .leftImage,
+    .rightImage,
+    .centerContent {
+        flex: 1 1 33.333%;
+        width: 100%;
+        min-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .imageContainer {
+        width: 90%;
+        height: 95%;
+        max-height: none;
+        margin: 6px;
+        border-radius: 16px;
+    }
+
+    .posterImg {
+        object-fit: cover;
+    }
+
+    .decorativeFrame {
+        width: calc(100% - 1rem);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.4rem 0.6rem;
+        overflow: hidden;
+        border-width: 1px;
+    }
+
+    .mainEvent {
+        font-size: 1.1rem;
+        margin: 0.25rem 0;
+        line-height: 1.3;
+    }
+
+    .andText {
+        font-size: 0.85rem;
+        margin: 0.2rem 0;
+    }
+
+    .subEvent {
+        font-size: 0.95rem;
+        margin: 0.25rem 0;
+        line-height: 1.3;
+    }
+
+    .dateText {
+        font-size: 0.85rem;
+        margin: 0.3rem 0;
+    }
+
+    .dateHighlight {
+        font-size: 1.3rem;
+    }
+
+    .inviteText {
+        font-size: 0.75rem;
+        line-height: 1.4;
+        margin: 0.25rem 0 0;
+    }
+
+    .eventText {
+        padding: 0;
     }
 
     .flowerBorderTop,
     .flowerBorderBottom {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        padding: 6px 0;
+    }
+
+    .frameTop,
+    .frameBottom {
+        font-size: 1.2rem;
+        margin: 0.15rem 0;
+    }
+
+    .closeButton {
+        top: 10px;
+        right: 10px;
+        width: 38px;
+        height: 38px;
     }
 }
 
 @media (max-width: 480px) {
     .banner {
-        width: 96%;
-        border-radius: 14px;
-        padding: 0.3rem;
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        padding: 0;
     }
 
-    .mainEvent {
-        font-size: 1.1rem;
+    .leftImage,
+    .rightImage,
+    .centerContent {
+        padding: 0.4rem;
     }
 
-    .subEvent {
-        font-size: 1rem;
-    }
-
-    .dateHighlight {
-        font-size: 1.2rem;
-    }
-
-    .dateText {
-        font-size: 1rem;
-    }
-
-    .inviteText {
-        font-size: 0.85rem;
+    .imageContainer {
+        border-radius: 12px;
     }
 
     .decorativeFrame {
-        padding: 0.5rem;
+        width: calc(100% - 1.8rem);
+        padding: 0.35rem 0.5rem;
+    }
+
+    .mainEvent {
+        font-size: 0.95rem;
+        line-height: 1.3;
+        margin: 0.2rem 0;
+    }
+
+    .andText {
+        font-size: 0.75rem;
+        margin: 0.15rem 0;
+    }
+
+    .subEvent {
+        font-size: 0.85rem;
+        line-height: 1.3;
+        margin: 0.2rem 0;
+    }
+
+    .dateText {
+        font-size: 0.75rem;
+        margin: 0.25rem 0;
+    }
+
+    .dateHighlight {
+        font-size: 1.15rem;
+    }
+
+    .inviteText {
+        font-size: 0.68rem;
+        line-height: 1.35;
+        margin: 0.2rem 0 0;
     }
 
     .closeButton {
-        width: 34px;
-        height: 34px;
+        width: 36px;
+        height: 36px;
         top: 8px;
         right: 8px;
     }
 
-    .leftImage .imageContainer,
-    .rightImage .imageContainer {
-        height: 120px;
-    }
-
     .flowerBorderTop,
     .flowerBorderBottom {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+        padding: 5px 0;
+    }
+
+    .frameTop,
+    .frameBottom {
+        font-size: 1rem;
+        margin: 0.1rem 0;
     }
 }
