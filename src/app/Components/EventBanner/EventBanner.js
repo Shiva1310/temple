@@ -20,8 +20,6 @@ export default function EventBanner() {
   handleClose();
 }, 10000);
 
-
-    // Create realistic cracker effects - multiple types
     const crackerInterval = setInterval(() => {
       const crackerTypes = ['rocket', 'sparkler', 'flowerpot', 'chakra'];
       const randomType = crackerTypes[Math.floor(Math.random() * crackerTypes.length)];
