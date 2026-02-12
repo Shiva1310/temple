@@ -1,5 +1,4 @@
 'use client';
-
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import Image from 'next/image';
@@ -15,7 +14,6 @@ export default function EventBanner() {
       setIsVisible(true);
     }, 500);
 
-    // Auto-close after 10 seconds
    const closeTimer = setTimeout(() => {
   handleClose();
 }, 10000);
