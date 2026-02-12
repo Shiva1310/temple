@@ -1,34 +1,44 @@
 export const metadata = {
-  title: "Temple Matrimony Service | Sree Dharma Sastha Temple Kavampattuvillai",
+  title: "Elavuvillai Matrimony | Temple Matrimony Service | Sree Dharma Sastha Temple",
   description:
-    "Register for temple matrimonial services. Helping families find suitable matches within the community with values, tradition and devotion.",
+    "Elavuvillai matrimony service by Sree Dharma Sastha Temple Kavampattuvillai. Register for temple matrimonial services. Helping families find suitable matches within the Elavuvillai community with values, tradition and devotion. Free matrimony registration.",
   keywords: [
+    "Elavuvillai matrimony",
+    "matrimony",
+    "Elavuvillai",
+    "temple matrimony",
     "Temple matrimonial service",
     "Sastha temple matrimony",
     "Hindu matrimony Elavuvillai",
     "Kanyakumari matrimonial service",
-    "Temple marriage bureau"
+    "Temple marriage bureau",
+    "Elavuvillai marriage",
+    "matrimony services Elavuvillai",
+    "community matrimony",
+    "Tamil matrimony Elavuvillai",
+    "Kavampattuvillai matrimony"
   ],
   alternates: {
     canonical: "/matrimony",
   },
   openGraph: {
-    title: "Temple Matrimony Service – Sree Dharma Sastha Temple",
+    title: "Elavuvillai Matrimony – Temple Matrimony Service – Sree Dharma Sastha Temple",
     description:
-      "Submit your details for temple matrimony. Community-based matchmaking rooted in tradition and faith.",
+      "Elavuvillai matrimony service. Submit your details for temple matrimony. Community-based matchmaking rooted in tradition and faith. Free registration for Elavuvillai community.",
     url: "https://sree-dharma-sastha-kavampattuvillai.vercel.app/matrimony",
     images: [
       {
         url: "/images/koil-1.png",
         width: 1200,
         height: 630,
-        alt: "Temple Matrimony Service",
+        alt: "Elavuvillai Temple Matrimony Service",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Temple Matrimony Service",
+    title: "Elavuvillai Matrimony | Temple Matrimony Service",
+    description: "Elavuvillai matrimony service by Sree Dharma Sastha Temple. Free registration for community matchmaking.",
     images: ["/images/koil-1.png"],
   },
 };

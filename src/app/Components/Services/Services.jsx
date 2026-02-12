@@ -119,7 +119,7 @@ export default function Services() {
         bookingInfo: {
           title: "Booking Information",
           description: "To book any of our special services or for more information, please contact our temple office.",
-          contact: "Temple Office: +91 98765 43210",
+          contact: "Temple Office: +91 9566409535",
           email: "info@dharmasasthatemple.org",
           note: "It is recommended to book special services at least one week in advance."
         }
@@ -232,7 +232,7 @@ export default function Services() {
         bookingInfo: {
           title: "முன்பதிவு தகவல்",
           description: "எங்கள் சிறப்பு சேவைகளை முன்பதிவு செய்ய அல்லது மேலும் தகவலுக்கு, எங்கள் கோவில் அலுவலகத்தை தொடர்பு கொள்ளவும்.",
-          contact: "கோவில் அலுவலகம்: +91 98765 43210",
+          contact: "கோவில் அலுவலகம்: +91 9566409535",
           email: "info@dharmasasthatemple.org",
           note: "சிறப்பு சேவைகளை குறைந்தது ஒரு வாரத்திற்கு முன்னதாக முன்பதிவு செய்ய பரிந்துரைக்கப்படுகிறது."
         }

@@ -49,7 +49,7 @@ export default function Construction() {
         title: 'Support Our Construction',
         description: 'The Mandapam construction is funded entirely through donations from our devoted community and supporters worldwide. Your contribution, regardless of size, helps us bring this sacred project to fruition.',
         howToContribute: 'You can contribute to our construction fund through direct donations at the temple, bank transfers, or our online donation portal. All donations are eligible for tax benefits under Section 80G.',
-        contactInfo: 'For more information about making a donation or to discuss sponsoring specific elements of the Mandapam, please contact our temple office at +91 98765 43210 or email us at donations@dharmasasthatemple.org.'
+        contactInfo: 'For more information about making a donation or to discuss sponsoring specific elements of the Mandapam, please contact our temple office at +91 9566409535 or email us at donations@dharmasasthatemple.org.'
       },
       testimonials: [
         {
@@ -91,7 +91,7 @@ export default function Construction() {
         title: 'எங்கள் கட்டுமானத்திற்கு ஆதரவளிக்கவும்',
         description: 'மண்டபம் கட்டுமானம் முழுவதும் எங்கள் அர்ப்பணிப்புள்ள சமூகம் மற்றும் உலகளவில் உள்ள ஆதரவாளர்களின் நன்கொடைகள் மூலம் நிதியளிக்கப்படுகிறது. உங்கள் பங்களிப்பு, அளவு எதுவாக இருந்தாலும், இந்த புனித திட்டத்தை நிறைவேற்ற எங்களுக்கு உதவுகிறது.',
         howToContribute: 'கோவிலில் நேரடி நன்கொடைகள், வங்கி பரிமாற்றங்கள் அல்லது எங்கள் ஆன்லைன் நன்கொடை போர்டல் மூலம் எங்கள் கட்டுமான நிதிக்கு பங்களிக்கலாம். அனைத்து நன்கொடைகளும் பிரிவு 80G இன் கீழ் வரிச் சலுகைகளுக்கு தகுதியானவை.',
-        contactInfo: 'நன்கொடை அளிப்பது குறித்த கூடுதல் தகவலுக்கு அல்லது மண்டபத்தின் குறிப்பிட்ட கூறுகளுக்கு நிதியுதவி வழங்குவது குறித்து விவாதிக்க, எங்கள் கோவில் அலுவலகத்தை +91 98765 43210 இல் தொடர்பு கொள்ளவும் அல்லது donations@dharmasasthatemple.org இல் எங்களுக்கு மின்னஞ்சல் அனுப்பவும்.'
+        contactInfo: 'நன்கொடை அளிப்பது குறித்த கூடுதல் தகவலுக்கு அல்லது மண்டபத்தின் குறிப்பிட்ட கூறுகளுக்கு நிதியுதவி வழங்குவது குறித்து விவாதிக்க, எங்கள் கோவில் அலுவலகத்தை +91 9566409535 இல் தொடர்பு கொள்ளவும் அல்லது donations@dharmasasthatemple.org இல் எங்களுக்கு மின்னஞ்சல் அனுப்பவும்.'
       },
       testimonials: [
         {

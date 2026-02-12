@@ -210,7 +210,7 @@ if (!formData.captchaToken) {
               <div className="flex items-center">
                 <Phone className="text-orange-600 h-5 w-5 md:h-6 md:w-6 mr-3 md:mr-4 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-gray-800 text-sm md:text-base">+91 98765 43210</p>
+                  <p className="font-medium text-gray-800 text-sm md:text-base">+91 9566409535</p>
                   <p className="text-xs md:text-sm text-gray-600">+91 87654 32109</p>
                 </div>
               </div>

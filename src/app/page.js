@@ -1,8 +1,10 @@
 export const metadata = {
-  title: "Sree Dharma Sastha Temple Kavampattuvillai | Elavuvillai Sastha Temple",
+  title: "Elavuvillai Temple | Sree Dharma Sastha Temple Kavampattuvillai",
   description:
-    "Official website of Sree Dharma Sastha Temple, Kavampattuvillai, Elavuvillai. Explore temple history, pooja timings, services, festivals, events, and temple activities in Kanyakumari district.",
+    "Official website of Sree Dharma Sastha Temple in Elavuvillai, Kavampattuvillai, Kanyakumari. Explore temple history, pooja timings, matrimony services, community hall, festivals, events, and temple activities.",
   keywords: [
+    "Elavuvillai",
+    "Elavuvillai temple",
     "Sree Dharma Sastha Temple",
     "Dharma Sastha Temple Elavuvillai",
     "Sastha Temple Kavampattuvillai",
@@ -11,7 +13,13 @@ export const metadata = {
     "Kavambadu temple",
     "Kavampattuvillai temple",
     "Hindu temple Kanyakumari",
-    "Sree Dharma Sastha Kavampattuvillai"
+    "Sree Dharma Sastha Kavampattuvillai",
+    "Elavuvillai matrimony",
+    "temple matrimony",
+    "matrimony services Elavuvillai",
+    "Elavuvillai community",
+    "Sastha Kalai Arangam",
+    "community hall Elavuvillai"
   ],
   metadataBase: new URL("https://sree-dharma-sastha-kavampattuvillai.vercel.app"),
   alternates: {

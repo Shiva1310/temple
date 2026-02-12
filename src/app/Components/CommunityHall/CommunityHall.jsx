@@ -32,7 +32,7 @@ const content = {
     ],
     contactInfo: {
       title: "Contact for Bookings",
-      phoneNumber: "+91 98765 43210",
+      phoneNumber: "+91 9566409535",
       email: "bookings@saasthatemple.org",
       coordinator: "Mr. Ramaswamy"
     },
@@ -64,7 +64,7 @@ const content = {
     ],
     contactInfo: {
       title: "முன்பதிவுகளுக்கான தொடர்பு",
-      phoneNumber: "+91 98765 43210",
+      phoneNumber: "+91 9566409535",
       email: "bookings@saasthatemple.org",
       coordinator: "திரு. ராமசாமி"
     },
