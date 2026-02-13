@@ -2,10 +2,13 @@ export default function LocalBusinessSchema() {
   const localSchema = {
     "@context": "https://schema.org",
     "@type": "Place",
-    "name": "Sree Dharma Sastha Temple Kavampattuvillai",
+    "name": "Elavuvillai Sree Dharma Sastha Temple",
+    "alternateName": ["Elavuvillai Temple", "Sree Dharma Sastha Temple Kavampattuvillai"],
+    "description": "Spiritual and cultural center in Elavuvillai, Tamil Nadu",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Kavampattuvillai, Elavuvillai Post",
+      "addressLocality": "Elavuvillai",
       "addressRegion": "Tamil Nadu",
       "postalCode": "629171",
       "addressCountry": "IN"

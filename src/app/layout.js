@@ -11,9 +11,9 @@ import GATracker from './ga-tracker';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Sri Dharma Sastha Temple Elavuvillai | Kavampattuvillai Temple',
-  description: 'Official website of Sri Dharma Sastha Temple in Elavuvillai, Kavampattuvillai, Kanyakumari. Hindu temple offering poojas, matrimony services, community hall, and religious activities.',
-  keywords: ['Elavuvillai temple', 'Elavuvillai', 'Sri Dharma Sastha Temple Elavuvillai', 'Kavampattuvillai temple', 'Elavuvillai matrimony', 'temple matrimony', 'Kanyakumari temple', 'Sastha temple Elavuvillai'],
+  title: 'Elavuvillai - Sri Dharma Sastha Temple | Kavampattuvillai, Kanyakumari',
+  description: 'Elavuvillai\'s premier Hindu temple - Sri Dharma Sastha Temple in Kavampattuvillai, Kanyakumari district. Discover Elavuvillai\'s spiritual heritage, daily poojas, matrimony services, community hall, and religious activities.',
+  keywords: ['Elavuvillai', 'Elavuvillai temple', 'Elavuvillai Kanyakumari', 'Sri Dharma Sastha Temple Elavuvillai', 'Kavampattuvillai temple', 'Elavuvillai matrimony', 'temple in Elavuvillai', 'Elavuvillai Tamil Nadu', 'Sastha temple Elavuvillai', 'Elavuvillai community', 'places in Elavuvillai', 'Elavuvillai village'],
 };
 
 export default function RootLayout({ children }) {
@@ -43,10 +43,10 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "HinduTemple",
-              name: "Sree Dharma Sastha Temple Kavampattuvillai Elavuvillai",
-              alternateName: ["Elavuvillai Temple", "Sastha Temple Elavuvillai", "Kavampattuvillai Temple"],
+              name: "Elavuvillai Sree Dharma Sastha Temple",
+              alternateName: ["Elavuvillai Temple", "Sri Dharma Sastha Temple Elavuvillai", "Sastha Temple Elavuvillai", "Kavampattuvillai Temple", "Elavuvillai Sastha Temple", "Temple in Elavuvillai"],
               description:
-                "Hindu temple in Elavuvillai, Kavampattuvillai, Kanyakumari district offering daily poojas, rituals, festivals, matrimony services, community hall, and religious services.",
+                "Premier Hindu temple in Elavuvillai, Kavampattuvillai, Kanyakumari district. Elavuvillai's spiritual center offering daily poojas, rituals, festivals, matrimony services, community hall, and religious services.",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Kavampattuvillai, Elavuvillai",

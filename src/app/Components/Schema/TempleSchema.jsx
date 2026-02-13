@@ -2,14 +2,17 @@ export default function TempleSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "HinduTemple",
-    "name": "Sree Dharma Sastha Temple Kavampattuvillai",
+    "name": "Elavuvillai Sree Dharma Sastha Temple",
     "alternateName": [
+      "Elavuvillai Temple",
       "Sastha Temple Elavuvillai",
       "Dharma Sastha Temple Kavampattuvillai",
-      "Ayyappa Temple Kavampattuvillai"
+      "Ayyappa Temple Kavampattuvillai",
+      "Temple in Elavuvillai",
+      "Elavuvillai Sastha Temple"
     ],
     "description":
-      "Sree Dharma Sastha Temple located in Kavampattuvillai, Elavuvillai, Kanyakumari district. A sacred Hindu temple dedicated to Lord Ayyappa with daily poojas, rituals, and community services.",
+      "Premier Hindu temple in Elavuvillai, Kavampattuvillai, Kanyakumari district. Elavuvillai's spiritual center - Sree Dharma Sastha Temple dedicated to Lord Ayyappa with daily poojas, rituals, matrimony services, and community activities.",
     "url": "https://sree-dharma-sastha-kavampattuvillai.vercel.app",
     "image": "https://sree-dharma-sastha-kavampattuvillai.vercel.app/images/koil-1.png",
     "address": {
@@ -53,11 +56,15 @@ export default function TempleSchema() {
     "founder": "Devotees of Kavampattuvillai",
     "foundingLocation": "Kanyakumari District",
     "keywords": [
+      "Elavuvillai",
+      "Elavuvillai temple",
       "Dharma Sastha temple",
       "Sastha temple Elavuvillai",
       "Ayyappa Temple",
       "Kanyakumari temples",
-      "Hindu temple Tamil Nadu"
+      "Hindu temple Tamil Nadu",
+      "Temple in Elavuvillai",
+      "Elavuvillai Kanyakumari"
     ]
   };
 
