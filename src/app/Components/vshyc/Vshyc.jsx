@@ -131,16 +131,12 @@ const Vshyc = () => {
                   {section.content}
                 </p>
                 {section.hasImage && (
-                  <div className="p-2 rounded-lg mb-6">
-                    <div className="h-130 rounded-lg flex items-center justify-center bg-gray-200 overflow-hidden">
-                      <Image 
-                        src={`/images/youth-${index + 1}.jpg`} 
-                        alt={section.imageAlt}
-                        width={400} 
-                        height={300}
-                        className="rounded-lg object-cover w-full h-full"
-                      />
-                    </div>
+                  <div className="mb-8 rounded-2xl overflow-hidden shadow-lg border border-orange-100 relative w-full aspect-video group">
+                    <img 
+                      src={`/images/youth-${index + 1}.jpg`} 
+                      alt={section.imageAlt}
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
                   </div>
                 )}
               </div>

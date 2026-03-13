@@ -248,7 +248,7 @@ export default function HomePage() {
         },
         {
           icon: "GraduationCap",
-          title: "கலரி (Kalari)",
+          title: "களரி (Kalari)",
           description:
             "அனைத்து வயதினருக்கும் பயிற்சி வழங்கப்படும்.\n• சேர்க்கை ஏப்ரல் 1 முதல் தொடங்குகிறது\n• கோடை விடுமுறைக்காலத்தில் சிறப்பு (Summer) வகுப்புகள் கூடுதலாக வழங்கப்படும்\n• தொடர்புக்கு: 9688115321",
           image:
@@ -464,9 +464,9 @@ export default function HomePage() {
               </div>
 
               <div className="bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-500">
-                <div className="relative h-80 md:h-96 overflow-hidden group">
+                <div className="relative aspect-video md:aspect-[21/9] w-full overflow-hidden group">
                   <img
-                    src="/images/koil-1.png"
+                    src="/images/tem.jpg"
                     alt="Historical imagery"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -770,17 +770,19 @@ export default function HomePage() {
                   </a>
                 </div>
 
-                <div className="relative h-full min-h-[400px] md:min-h-0 order-1 md:order-2 group">
-                  <img
-                    src="/images/mandabam-1.jpg"
-                    alt="Mandapam Construction"
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-transparent"></div>
-                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
-                    <p className="text-orange-600 font-bold text-sm">
-                      🏗️ Under Construction
-                    </p>
+                <div className="w-full relative bg-orange-50/50 p-4 md:p-8 flex items-center justify-center order-1 md:order-2 group">
+                  <div className="relative w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white aspect-[4/3]">
+                    <img
+                      src="/images/mandabam.png"
+                      alt="Mandapam Construction"
+                      className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-br from-orange-600/10 to-transparent pointer-events-none"></div>
+                    <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg z-10">
+                      <p className="text-orange-600 font-bold text-sm">
+                        🏗️ Under Construction
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
