@@ -1,5 +1,12 @@
-import { kv } from '@vercel/kv';
+import { createClient } from '@vercel/kv';
 import { NextResponse } from 'next/server';
+
+// Create a custom kv client that looks for explicit Vercel locked prefixes 
+// while falling back to standard prefixes for local testing.
+const kv = createClient({
+  url: process.env.temple_KV_REST_API_URL || process.env.KV_REST_API_URL,
+  token: process.env.temple_KV_REST_API_TOKEN || process.env.KV_REST_API_TOKEN,
+});
 
 export async function GET() {
   try {
