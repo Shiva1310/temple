@@ -27,11 +27,27 @@ export default function AdminPage() {
       .catch(err => console.error("Failed to load content", err));
   }, []);
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    if (password) {
-      setIsAuthenticated(true);
-      setMessage({ type: "", text: "" });
+    if (!password) return;
+    
+    // Test the password against the server
+    try {
+      const res = await fetch('/api/content', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'verify', password })
+      });
+      
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setIsAuthenticated(true);
+        setMessage({ type: "", text: "" });
+      } else {
+        setMessage({ type: "error", text: data.error || "Incorrect password" });
+      }
+    } catch (err) {
+      setMessage({ type: "error", text: "Network error checking password." });
     }
   };
 
@@ -198,8 +214,6 @@ export default function AdminPage() {
             title={`Daily Events (${langTab})`}
             type="dailyEvents"
             items={content[langTab].dailyEvents}
-            onAdd={() => addEvent('dailyEvents')}
-            onRemove={(id) => removeEvent('dailyEvents', id)}
             onUpdate={(id, field, val) => updateEvent('dailyEvents', id, field, val)}
             lang={langTab}
           />
@@ -209,8 +223,6 @@ export default function AdminPage() {
             title={`Monthly Events (${langTab})`}
             type="monthlyEvents"
             items={content[langTab].monthlyEvents}
-            onAdd={() => addEvent('monthlyEvents')}
-            onRemove={(id) => removeEvent('monthlyEvents', id)}
             onUpdate={(id, field, val) => updateEvent('monthlyEvents', id, field, val)}
             lang={langTab}
           />
@@ -220,7 +232,7 @@ export default function AdminPage() {
   );
 }
 
-function EventEditor({ title, items, onAdd, onRemove, onUpdate, lang }) {
+function EventEditor({ title, items, onUpdate, lang }) {
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 sm:p-8">
       <div className="flex justify-between items-center mb-6">
@@ -228,12 +240,6 @@ function EventEditor({ title, items, onAdd, onRemove, onUpdate, lang }) {
           <CalendarClock className="text-orange-500 w-6 h-6" />
           <h2 className="text-xl font-bold text-gray-800">{title}</h2>
         </div>
-        <button 
-          onClick={onAdd}
-          className="flex items-center gap-1 bg-orange-100 text-orange-700 px-4 py-2 rounded-lg font-semibold hover:bg-orange-200 transition"
-        >
-          <Plus className="w-4 h-4" /> Add Event
-        </button>
       </div>
 
       {items.length === 0 ? (
@@ -265,13 +271,6 @@ function EventEditor({ title, items, onAdd, onRemove, onUpdate, lang }) {
                 onChange={(e) => onUpdate(item.id, 'event', e.target.value)}
                 className="flex-[2] px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 outline-none"
               />
-              <button
-                onClick={() => onRemove(item.id)}
-                className="p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition"
-                title="Remove Event"
-              >
-                <Trash2 className="w-5 h-5" />
-              </button>
             </div>
           ))}
         </div>

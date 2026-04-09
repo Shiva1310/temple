@@ -335,6 +335,16 @@ export default function HomePage() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleVideoPlay = (e) => {
+    const videos = document.querySelectorAll('video');
+    videos.forEach(video => {
+      // Pause all other videos if one starts playing naturally or automatically
+      if (video !== e.target && !video.paused) {
+        video.pause();
+      }
+    });
+  };
+
   // Animation on component mount
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -370,24 +380,25 @@ export default function HomePage() {
 
       <div className="relative z-10">
         {/* Hero Section with Background Video */}
-        <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative w-full min-h-[70vh] md:h-screen overflow-hidden flex flex-col justify-center">
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70 z-10"></div>
+          {/* Hero Background (Video 2 - Uniform for both Mobile & Desktop) */}
           <video
             autoPlay
             muted
             loop
             playsInline
-            className="absolute top-0 left-0 w-full h-full object-cover"
+            className="hero-video absolute top-0 left-0 w-full h-full object-cover"
           >
             <source
-              src="https://res.cloudinary.com/dn9w8pm0t/video/upload/v1745818384/YouCut_20210523_122136304_gymbge.mp4"
+              src="https://res.cloudinary.com/dn9w8pm0t/video/upload/v1775735786/VN20260329_191151_otevyn.mp4"
               type="video/mp4"
             />
           </video>
 
           <div
             id="hero-content"
-            className="relative z-20 flex flex-col items-center justify-center h-full text-white transition-all duration-700 ease-out opacity-0 translate-y-10 px-4"
+            className="relative z-20 flex flex-col items-center justify-center h-full text-white transition-all duration-700 ease-out opacity-0 translate-y-10 px-4 py-16 md:py-0"
           >
             <div className="mb-6 animate-bounce-slow">
               <Star className="h-16 w-16 text-amber-300" />
@@ -520,10 +531,12 @@ export default function HomePage() {
                   <h3 className="text-xl font-bold text-rose-800 uppercase tracking-widest">{content[currentLanguage].boards.announcements}</h3>
                 </div>
                 <div className="flex-1 overflow-hidden relative bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
-                  <div className="absolute inset-0 flex items-center bg-black/5">
-                    <p className="text-xl md:text-2xl font-bold text-gray-800 px-6 leading-relaxed marquee-horizontal" style={{ animationDuration: '30s' }}>
-                      ✨ {dynamicContent[currentLanguage]?.announcements || content[currentLanguage].boards.defaultAnnouncement} ✨
-                    </p>
+                  <div className="absolute inset-0 bg-black/5 p-6">
+                    <div className="scroll-vertical" style={{ animationDuration: '40s' }}>
+                      <p className="text-lg md:text-xl font-bold text-gray-800 leading-relaxed whitespace-pre-wrap">
+                        ✨ {dynamicContent[currentLanguage]?.announcements || content[currentLanguage].boards.defaultAnnouncement} ✨
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -601,232 +614,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
-        {/* ── Kumbabishekam Festival Section ── */}
-        <section className="py-20 px-4 bg-gradient-to-b from-amber-50 via-orange-50 to-amber-50 relative overflow-hidden">
-          {/* Decorative mandala bg */}
-          <div className="absolute inset-0 pointer-events-none opacity-5"
-            style={{ backgroundImage: "radial-gradient(circle, #f97316 1.5px, transparent 1.5px)", backgroundSize: "40px 40px" }} />
-
-          <div className="container mx-auto relative z-10 max-w-7xl">
-
-            {/* ── Section Header ── */}
-            <div className="text-center mb-14">
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-100 to-amber-100 px-6 py-2 rounded-full shadow mb-5">
-                <span className="text-2xl">🪔</span>
-                <span className="text-orange-800 font-semibold text-sm tracking-wide">Sacred Event · 25-03-2026</span>
-              </div>
-
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight bg-gradient-to-r from-orange-700 via-red-600 to-amber-600 bg-clip-text text-transparent mb-3 px-2">
-                12ஆம் வருட மஹா கும்பாபிஷேகம்
-              </h2>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-orange-700 mb-2">
-                மற்றும் சாஸ்தா கலையரங்க திறப்பு விழா
-              </h3>
-              <p className="text-orange-500 font-semibold text-lg mb-4">25 மார்ச் 2026</p>
-
-              {/* Swami name section */}
-              <div className="inline-flex flex-col sm:flex-row items-center gap-2 bg-white border border-orange-200 rounded-2xl shadow-lg px-6 py-4 mt-2">
-                <span className="text-orange-600 font-bold text-base">தலைமை :</span>
-                <span className="text-gray-800 font-semibold text-base sm:text-lg">
-                  சுவாமி சிவாத்மானந்த ஜீ மஹாராஜ்
-                </span>
-                <span className="text-gray-500 text-sm">(வெள்ளிமலை, இந்து தர்ம வித்யாபீட அமைப்பு செயலர்)</span>
-              </div>
-            </div>
-
-            {/* ── Videos: landscape desktop / portrait mobile ── */}
-            <div className="mb-16">
-              <h4 className="text-center text-xl font-bold text-orange-700 mb-8 flex items-center justify-center gap-2">
-                <span>🎬</span> விழா காணொளிகள் (Event Videos)
-              </h4>
-
-              <style>{`
-                .event-video-wrap {
-                  position: relative;
-                  width: 100%;
-                  max-width: 420px;
-                  margin: 0 auto;
-                  aspect-ratio: 9/16;
-                  border-radius: 1rem;
-                  overflow: hidden;
-                }
-                @media (min-width: 640px) {
-                  .event-video-wrap {
-                    max-width: 800px;
-                    aspect-ratio: 16/9;
-                  }
-                }
-                .event-video-wrap video {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  display: block;
-                }
-              `}</style>
-
-              <div className="flex flex-col gap-8 items-center">
-                {/* Video 1 */}
-                <div className="w-full flex flex-col items-center gap-3">
-                  <div className="event-video-wrap shadow-2xl border-4 border-orange-300 hover:border-orange-500 transition-all duration-300 bg-black">
-                    <video controls preload="none" playsInline>
-                      <source src="https://res.cloudinary.com/dn9w8pm0t/video/upload/v1775739031/temple_1_1_jkfcl1.mp4" type="video/mp4" />
-                    </video>
-                    <div className="absolute top-3 left-3 bg-orange-600/90 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
-                      📹 Video 1
-                    </div>
-                  </div>
-                </div>
-
-                {/* Video 2 */}
-                <div className="w-full flex flex-col items-center gap-3">
-                  <div className="event-video-wrap shadow-2xl border-4 border-amber-300 hover:border-amber-500 transition-all duration-300 bg-black">
-                    <video controls preload="none" playsInline>
-                      <source src="https://res.cloudinary.com/dn9w8pm0t/video/upload/v1775735786/VN20260329_191151_otevyn.mp4" type="video/mp4" />
-                    </video>
-                    <div className="absolute top-3 left-3 bg-amber-600/90 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
-                      📹 Video 2
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* ── Image Gallery ── */}
-            <div>
-              <h4 className="text-center text-xl font-bold text-orange-700 mb-8 flex items-center justify-center gap-2">
-                <span>📸</span> விழா நிகழ்படங்கள் (Event Photos)
-              </h4>
-
-              <div className="columns-2 sm:columns-3 lg:columns-4 xl:columns-5 gap-3 space-y-3">
-                {[
-                  /* ── Replace each URL below with your actual image URL ── */
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739147/vilaku_sdhxvt.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739146/tem3_pfiy2m.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739146/committe_jhoddj.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739145/oorvalam1_e6puul.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739144/oorvalam2_b4s5xp.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739144/oorvalam3_n1zib7.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739143/sami1_xyoqf7.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739143/sami2_t3rrle.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739142/sami4_dajbzp.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739142/kum1_st8xi6.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739142/tem1_vownhn.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739140/group_kn0vyy.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739142/tem2_bsxz8p.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739141/fulltem1_x8efcg.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739140/kum2_e9qea0.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739140/speech_akpqy0.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739139/mandabam1_xoytnq.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739139/madabamn_jvzocs.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739137/fountain1_n6wclh.png",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739135/templ_uusdpe.jpg",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739102/WhatsApp_Image_2026-04-09_at_6.15.30_PM_f6nzcg.jpg",
-                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739990/WhatsApp_Image_2026-03-25_at_12.43.39_PM_o07lsl.jpg",
-                  
-                  
-
-
-                ].map((src, i) => (
-                  <div
-                    key={i}
-                    className="break-inside-avoid rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-orange-50 border border-orange-100"
-                  >
-                    <img
-                      src={src}
-                      alt={`Kumbabishekam 2026 - Photo ${i + 1}`}
-                      loading="lazy"
-                      decoding="async"
-                      className="w-full h-auto object-cover block"
-                      onError={(e) => { e.currentTarget.style.display='none'; }}
-                    />
-                  </div>
-                ))}
-              </div>
-
-              <p className="text-center text-orange-400 text-xs mt-6 italic">
-                📷 12ஆம் வருட மஹா கும்பாபிஷேகம் · 25-03-2026 · காவம்பாட்டுவிளை
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Services Section */}
-
-        <section className="py-20 px-4 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-50">
-          <div className="container mx-auto">
-            <div className="text-center mb-16">
-              <div className="inline-block mb-4">
-                <div className="flex items-center gap-2 bg-gradient-to-r from-orange-100 to-amber-100 px-5 py-2 rounded-full">
-                  <Gem className="h-5 w-5 text-orange-600" />
-                  <span className="text-orange-800 font-semibold text-sm">
-                    Our Services
-                  </span>
-                </div>
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-amber-600 bg-clip-text text-transparent mb-6">
-                {content[currentLanguage].servicesTitle}
-              </h2>
-              <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                {content[currentLanguage].servicesShort}
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {content[currentLanguage].serviceHighlights.map(
-                (service, index) => (
-                  <div
-                    key={index}
-                    className="group bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center text-center hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-t-4 border-orange-400 relative overflow-hidden"
-                  >
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-orange-100 to-transparent rounded-bl-full opacity-30"></div>
-                    <div className="relative z-10 bg-gradient-to-br from-orange-100 to-amber-100 p-6 rounded-full mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
-                      {service.icon === "Pray" && (
-                        <Sparkle className="h-12 w-12 text-orange-600" />
-                      )}
-                      {service.icon === "Gem" && (
-                        <Gem className="h-12 w-12 text-orange-600" />
-                      )}
-                      {service.icon === "Heart" && (
-                        <Heart className="h-12 w-12 text-orange-600" />
-                      )}
-                    </div>
-                    <h3 className="text-2xl font-bold text-orange-800 mb-4 relative z-10">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed relative z-10">
-                      {service.description}
-                    </p>
-                  </div>
-                ),
-              )}
-            </div>
-
-            <div className="text-center mt-12">
-              <a
-                href="/services"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
-              >
-                {content[currentLanguage].viewAllServices}
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* Academy Section - ENHANCED */}
+ {/* Academy Section - ENHANCED */}
         <section className="py-24 px-4 bg-gradient-to-b from-white via-orange-50 to-white relative overflow-hidden">
           {/* Decorative background */}
           <div className="absolute inset-0 opacity-5">
@@ -953,6 +741,268 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        {/* ── Kumbabishekam Festival Section ── */}
+        <section className="py-20 px-4 bg-gradient-to-b from-amber-50 via-orange-50 to-amber-50 relative overflow-hidden">
+          {/* Decorative mandala bg */}
+          <div className="absolute inset-0 pointer-events-none opacity-5"
+            style={{ backgroundImage: "radial-gradient(circle, #f97316 1.5px, transparent 1.5px)", backgroundSize: "40px 40px" }} />
+
+          <div className="container mx-auto relative z-10 max-w-7xl">
+
+            {/* ── Section Header ── */}
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-100 to-amber-100 px-6 py-2 rounded-full shadow mb-5">
+                <span className="text-2xl">🪔</span>
+                <span className="text-orange-800 font-semibold text-sm tracking-wide">{content[currentLanguage].kumbabishekam.badge}</span>
+              </div>
+
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight bg-gradient-to-r from-orange-700 via-red-600 to-amber-600 bg-clip-text text-transparent mb-3 px-2">
+                {content[currentLanguage].kumbabishekam.title}
+              </h2>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-orange-700 mb-2">
+                {content[currentLanguage].kumbabishekam.subtitle}
+              </h3>
+              <p className="text-orange-500 font-semibold text-lg mb-4">{content[currentLanguage].kumbabishekam.date}</p>
+
+              {/* Swami name section */}
+              <div className="inline-flex flex-col sm:flex-row items-center gap-2 bg-white border border-orange-200 rounded-2xl shadow-lg px-6 py-4 mt-2">
+                <span className="text-orange-600 font-bold text-base">{content[currentLanguage].kumbabishekam.ledBy}</span>
+                <span className="text-gray-800 font-semibold text-base sm:text-lg">
+                  {content[currentLanguage].kumbabishekam.swami}
+                </span>
+                <span className="text-gray-500 text-sm">{content[currentLanguage].kumbabishekam.swamiRole}</span>
+              </div>
+            </div>
+
+            {/* ── Videos: landscape desktop / portrait mobile ── */}
+            <div className="mb-16">
+              <h4 className="text-center text-xl font-bold text-orange-700 mb-8 flex items-center justify-center gap-2">
+                <span>🎬</span> {content[currentLanguage].kumbabishekam.videosTitle}
+              </h4>
+
+              <style>{`
+                .event-video-wrap {
+                  position: relative;
+                  width: 100%;
+                  max-width: 800px;
+                  margin: 0 auto;
+                  border-radius: 1rem;
+                  overflow: hidden;
+                  background-color: #000;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+                
+                .event-video-wrap video {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                }
+
+                /* Mobile View (Standardized) */
+                @media (max-width: 767px) {
+                  .event-video-wrap {
+                    aspect-ratio: 16/9; /* Keep videos landscape, exactly like desktop! */
+                  }
+                  .video-one, .video-two {
+                    object-fit: contain;
+                    transform: none;
+                  }
+                  .hero-video {
+                    object-fit: cover;
+                    /* Gentle 1.5x scale to mathematically clip the baked-in black border without ruining clarity */
+                    transform: scale(1.6);
+                  }
+                }
+
+                /* Desktop View (Landscape) */
+                @media (min-width: 768px) {
+                  .event-video-wrap {
+                    aspect-ratio: 16/9;
+                  }
+                  
+                  /* Video 1 was filmed sideways, rotate it into the landscape box */
+                  .video-one {
+                    object-fit: contain;
+                    transform: rotate(-90deg) scale(1.7778);
+                  }
+                  
+                  /* Hero video is the second video, standard orientation, might need a slight zoom to clip hard borders */
+                  .hero-video {
+                    object-fit: cover;
+                  }
+                  
+                  /* Video 2 just needs a tiny zoom to hide hardcoded pixels, not 2.2x */
+                  .video-two {
+                    object-fit: cover;
+                    transform: scale(1.1);
+                  }
+                }
+              `}</style>
+
+              <div className="flex flex-col gap-8 items-center">
+                {/* Video 1 */}
+                <div className="w-full flex flex-col items-center gap-3">
+                  <div className="event-video-wrap shadow-2xl border-4 border-orange-300 hover:border-orange-500 transition-all duration-300">
+                    <video className="video-one" autoPlay muted loop playsInline onPlay={handleVideoPlay} controls preload="metadata">
+                      <source src="https://res.cloudinary.com/dn9w8pm0t/video/upload/v1775739031/temple_1_1_jkfcl1.mp4" type="video/mp4" />
+                    </video>
+                    <div className="absolute top-3 left-3 bg-orange-600/90 text-white text-xs font-bold px-3 py-1 rounded-full z-10 pointer-events-none">
+                      📹 Video 1
+                    </div>
+                  </div>
+                </div>
+
+                {/* Video 2 */}
+                <div className="w-full flex flex-col items-center gap-3">
+                  <div className="event-video-wrap shadow-2xl border-4 border-amber-300 hover:border-amber-500 transition-all duration-300">
+                    <video className="video-two" autoPlay muted loop playsInline onPlay={handleVideoPlay} controls preload="metadata">
+                      <source src="https://res.cloudinary.com/dn9w8pm0t/video/upload/v1775735786/VN20260329_191151_otevyn.mp4" type="video/mp4" />
+                    </video>
+                    <div className="absolute top-3 left-3 bg-amber-600/90 text-white text-xs font-bold px-3 py-1 rounded-full z-10 pointer-events-none">
+                      📹 Video 2
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* ── Image Gallery ── */}
+            <div>
+              <h4 className="text-center text-xl font-bold text-orange-700 mb-8 flex items-center justify-center gap-2">
+                <span>📸</span> விழா நிகழ்படங்கள் (Event Photos)
+              </h4>
+
+              <div className="columns-2 sm:columns-3 lg:columns-4 xl:columns-5 gap-3 space-y-3">
+                {[
+                  /* ── Replace each URL below with your actual image URL ── */
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739147/vilaku_sdhxvt.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739146/tem3_pfiy2m.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739146/committe_jhoddj.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739145/oorvalam1_e6puul.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739144/oorvalam2_b4s5xp.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739144/oorvalam3_n1zib7.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739143/sami1_xyoqf7.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739143/sami2_t3rrle.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739142/sami4_dajbzp.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739142/kum1_st8xi6.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739142/tem1_vownhn.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739140/group_kn0vyy.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739142/tem2_bsxz8p.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739141/fulltem1_x8efcg.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739140/kum2_e9qea0.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739140/speech_akpqy0.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739139/mandabam1_xoytnq.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739139/madabamn_jvzocs.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739137/fountain1_n6wclh.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739135/templ_uusdpe.jpg",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739102/WhatsApp_Image_2026-04-09_at_6.15.30_PM_f6nzcg.jpg",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739990/WhatsApp_Image_2026-03-25_at_12.43.39_PM_o07lsl.jpg",
+                  
+                  
+
+
+                ].map((src, i) => (
+                  <div
+                    key={i}
+                    className="break-inside-avoid rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-orange-50 border border-orange-100"
+                  >
+                    <img
+                      src={src}
+                      alt={`Kumbabishekam 2026 - Photo ${i + 1}`}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-auto object-cover block"
+                      onError={(e) => { e.currentTarget.style.display='none'; }}
+                    />
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-center text-orange-400 text-xs mt-6 italic">
+                {content[currentLanguage].kumbabishekam.photoFooter}
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Section */}
+
+        <section className="py-20 px-4 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-50">
+          <div className="container mx-auto">
+            <div className="text-center mb-16">
+              <div className="inline-block mb-4">
+                <div className="flex items-center gap-2 bg-gradient-to-r from-orange-100 to-amber-100 px-5 py-2 rounded-full">
+                  <Gem className="h-5 w-5 text-orange-600" />
+                  <span className="text-orange-800 font-semibold text-sm">
+                    Our Services
+                  </span>
+                </div>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-amber-600 bg-clip-text text-transparent mb-6">
+                {content[currentLanguage].servicesTitle}
+              </h2>
+              <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+                {content[currentLanguage].servicesShort}
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {content[currentLanguage].serviceHighlights.map(
+                (service, index) => (
+                  <div
+                    key={index}
+                    className="group bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center text-center hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-t-4 border-orange-400 relative overflow-hidden"
+                  >
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-orange-100 to-transparent rounded-bl-full opacity-30"></div>
+                    <div className="relative z-10 bg-gradient-to-br from-orange-100 to-amber-100 p-6 rounded-full mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
+                      {service.icon === "Pray" && (
+                        <Sparkle className="h-12 w-12 text-orange-600" />
+                      )}
+                      {service.icon === "Gem" && (
+                        <Gem className="h-12 w-12 text-orange-600" />
+                      )}
+                      {service.icon === "Heart" && (
+                        <Heart className="h-12 w-12 text-orange-600" />
+                      )}
+                    </div>
+                    <h3 className="text-2xl font-bold text-orange-800 mb-4 relative z-10">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed relative z-10">
+                      {service.description}
+                    </p>
+                  </div>
+                ),
+              )}
+            </div>
+
+            <div className="text-center mt-12">
+              <a
+                href="/services"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+              >
+                {content[currentLanguage].viewAllServices}
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+       
 
         {/* Mandapam Construction Section - ENHANCED */}
         <section className="py-20 px-4 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-50">
