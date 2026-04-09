@@ -5,14 +5,16 @@ export default function TempleSchema() {
     "name": "Elavuvillai Sree Dharma Sastha Temple",
     "alternateName": [
       "Elavuvillai Temple",
-      "Sastha Temple Elavuvillai",
+      "Elavuvillai Sastha Temple",
+      "Elavuvillai Sastha Kovil",
+      "Sree Dharma Sastha Temple Elavuvillai",
+      "Sri Dharma Sastha Temple Elavuvillai",
       "Dharma Sastha Temple Kavampattuvillai",
-      "Ayyappa Temple Kavampattuvillai",
-      "Temple in Elavuvillai",
-      "Elavuvillai Sastha Temple"
+      "Ayyappa Temple Elavuvillai",
+      "Temple in Elavuvillai"
     ],
     "description":
-      "Premier Hindu temple in Elavuvillai, Kavampattuvillai, Kanyakumari district. Elavuvillai's spiritual center - Sree Dharma Sastha Temple dedicated to Lord Ayyappa with daily poojas, rituals, matrimony services, and community activities.",
+      "Elavuvillai's official Sree Dharma Sastha Temple in Kavampattuvillai, Kanyakumari district. Offering daily poojas, matrimony services for Elavuvillai community, community hall Sastha Kalai Arangam, and cultural activities. Search 'Elavuvillai temple' or 'Elavuvillai Sastha temple' to find us.",
     "url": "https://sree-dharma-sastha-kavampattuvillai.vercel.app",
     "image": "https://sree-dharma-sastha-kavampattuvillai.vercel.app/images/koil-1.png",
     "address": {
@@ -25,9 +27,11 @@ export default function TempleSchema() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "8.2715995°",
+      "latitude": "8.2715995",
       "longitude": "77.2364503"
     },
+    "telephone": "+919688115321",
+    "email": "kavampattuvillaisastha@gmail.com",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -50,17 +54,21 @@ export default function TempleSchema() {
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+91 9876543210",
-      "contactType": "customer support"
+      "telephone": "+919688115321",
+      "contactType": "customer support",
+      "availableLanguage": ["Tamil", "English"]
     },
-    "founder": "Devotees of Kavampattuvillai",
-    "foundingLocation": "Kanyakumari District",
     "keywords": [
       "Elavuvillai",
       "Elavuvillai temple",
-      "Dharma Sastha temple",
+      "Elavuvillai sastha temple",
+      "Dharma Sastha temple Elavuvillai",
+      "Sree Dharma Sastha Temple",
       "Sastha temple Elavuvillai",
-      "Ayyappa Temple",
+      "Ayyappa Temple Elavuvillai",
+      "Kavampattuvillai temple",
+      "Elavuvillai matrimony",
+      "temple matrimony Elavuvillai",
       "Kanyakumari temples",
       "Hindu temple Tamil Nadu",
       "Temple in Elavuvillai",
@@ -69,8 +77,9 @@ export default function TempleSchema() {
   };
 
   return (
-    <script type="application/ld+json">
-      {JSON.stringify(schema)}
-    </script>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }

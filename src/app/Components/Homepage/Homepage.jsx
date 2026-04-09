@@ -21,6 +21,7 @@ import {
   HeartHandshake,
   Award,
   Star,
+  MessageSquareWarning,
 } from "lucide-react";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 
@@ -85,10 +86,10 @@ export default function HomePage() {
       viewAllServices: "View All Services",
 
       // Enhanced construction section
-      construction: "Mandapam Construction",
+      construction: "Sree Dharmasastha Kalayarangam",
       constructionText:
-        "We are currently expanding our temple with a new Mandapam to better serve our growing community. Your support and contributions are welcome to help us complete this sacred project.",
-      learnMoreDonate: "Learn More & Donate",
+        "Sree Dharmasastha Kalayarangam is available for Wedding Functions, Birthday Functions, and other Social Functions. For bookings and enquiries, please contact us at 9688115321 or 9965856975.",
+      learnMoreDonate: "Contact for Booking",
 
       visitUs: "Visit Us",
       address:
@@ -146,6 +147,27 @@ export default function HomePage() {
             "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1770877078/Screenshot_2026-02-12_114739_u33mok.png",
         },
       ],
+      kumbabishekam: {
+        badge: "Sacred Event · 25-03-2026",
+        title: "12th Year Maha Kumbabishekam",
+        subtitle: "& Sastha Kalai Arangam Opening Ceremony",
+        date: "25 March 2026",
+        ledBy: "Led by:",
+        swami: "Swami Sivatmananda Ji Maharaj",
+        swamiRole: "(Secretary, Hindu Dharma Vidyapeetham, Vellimalai)",
+        videosTitle: "🎬 Event Videos",
+        photosTitle: "📸 Event Gallery",
+        photoFooter: "📷 12th Year Maha Kumbabishekam · 25-03-2026 · Kavampattuvillai"
+      },
+      boards: {
+        title: "Temple Updates & Events",
+        daily: "Daily Events",
+        monthly: "Monthly Events",
+        announcements: "Announcements",
+        noDaily: "No daily events updated yet.",
+        noMonthly: "No monthly events updated yet.",
+        defaultAnnouncement: "Welcome to Sree Dharma Sastha Temple Kavampattuvillai."
+      }
     },
     tamil: {
       navLinks: ["முகப்பு", "புகைப்பட தொகுப்பு", "கட்டுமானம்", "தொடர்பு"],
@@ -203,10 +225,10 @@ export default function HomePage() {
       viewAllServices: "அனைத்து சேவைகளையும் காண",
 
       // Enhanced construction section
-      construction: "மண்டபம் கட்டுமானம்",
+      construction: "ஸ்ரீ தர்மசாஸ்தா கலையரங்கம்",
       constructionText:
-        "வளர்ந்து வரும் எங்கள் சமூகத்திற்கு சிறப்பாக சேவை செய்ய நாங்கள் தற்போது புதிய மண்டபத்துடன் எங்கள் கோவிலை விரிவுபடுத்துகிறோம். இந்த புனித திட்டத்தை முடிக்க உங்கள் ஆதரவு மற்றும் பங்களிப்புகள் வரவேற்கப்படுகின்றன.",
-      learnMoreDonate: "மேலும் அறிந்து நன்கொடை அளிக்கவும்",
+        "ஸ்ரீ தர்மசாஸ்தா கலையரங்கம் திருமண விழாக்கள், பிறந்தநாள் விழாக்கள் மற்றும் பிற சமூக நிகழ்வுகளுக்கு கிடைக்கிறது. முன்பதிவு மற்றும் விசாரணைகளுக்கு 9688115321 அல்லது 9965856975 என்ற எண்ணில் தொடர்பு கொள்ளவும்.",
+      learnMoreDonate: "மேலும் அறிந்து விசாரிக்கவும்",
 
       visitUs: "எங்களை சந்திக்கவும்",
       address:
@@ -264,8 +286,45 @@ export default function HomePage() {
             "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1770877078/Screenshot_2026-02-12_114739_u33mok.png",
         },
       ],
+      kumbabishekam: {
+        badge: "புனித நிகழ்வு · 25-03-2026",
+        title: "12ஆம் வருட மஹா கும்பாபிஷேகம்",
+        subtitle: "மற்றும் சாஸ்தா கலையரங்க திறப்பு விழா",
+        date: "25 மார்ச் 2026",
+        ledBy: "தலைமை :",
+        swami: "சுவாமி சிவாத்மானந்த ஜீ மஹாராஜ்",
+        swamiRole: "(வெள்ளிமலை, இந்து தர்ம வித்யாபீட அமைப்பு செயலர்)",
+        videosTitle: "🎬 விழா காணொளிகள்",
+        photosTitle: "📸 விழா நிகழ்படங்கள்",
+        photoFooter: "📷 12ஆம் வருட மஹா கும்பாபிஷேகம் · 25-03-2026 · காவம்பாட்டுவிளை"
+      },
+      boards: {
+        title: "கோவில் அறிவிப்புகள் & நிகழ்வுகள்",
+        daily: "தினசரி நிகழ்வுகள்",
+        monthly: "மாதாந்திர நிகழ்வுகள்",
+        announcements: "அறிவிப்புகள்",
+        noDaily: "தினசரி நிகழ்வுகள் எதுவும் புதுப்பிக்கப்படவில்லை.",
+        noMonthly: "மாதாந்திர நிகழ்வுகள் எதுவும் புதுப்பிக்கப்படவில்லை.",
+        defaultAnnouncement: "காவம்பாட்டுவிளை ஸ்ரீ தர்ம சாஸ்தா கோவிலுக்கு உங்களை வரவேற்கிறோம்."
+      }
     },
   };
+
+  // Dynamic Content State from KV Storage
+  const [dynamicContent, setDynamicContent] = useState({
+    dailyEvents: [],
+    monthlyEvents: [],
+    announcements: ""
+  });
+
+  useEffect(() => {
+    fetch('/api/content')
+      .then(res => res.json())
+      .then(data => {
+        if (data && !data.error) setDynamicContent(data);
+      })
+      .catch(console.error);
+  }, []);
 
   // Handle scroll effect for navbar
   useEffect(() => {
@@ -377,69 +436,96 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Activities and Events Section */}
+        {/* Dynamic Running Boards Section */}
         <section
-          id="events"
-          className="py-20 px-4 bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50"
+          id="events-boards"
+          className="py-16 px-4 bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50"
         >
-          <div className="container mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              {/* Daily Activities */}
-              <div className="group bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-t-4 border-orange-500 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-100 to-transparent rounded-bl-full opacity-50"></div>
-                <div className="flex items-center mb-8 relative z-10">
-                  <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-4 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Clock className="text-white h-8 w-8" />
-                  </div>
-                  <h3 className="text-3xl font-bold text-orange-800 ml-4">
-                    {content[currentLanguage].dailyActivities}
-                  </h3>
+          {/* Custom style for running animations */}
+          <style dangerouslySetInnerHTML={{__html: `
+            .scroll-vertical {
+              animation: scroll-up 15s linear infinite;
+            }
+            .scroll-vertical:hover {
+              animation-play-state: paused;
+            }
+            @keyframes scroll-up {
+              0% { transform: translateY(100%); }
+              100% { transform: translateY(-100%); }
+            }
+            .marquee-horizontal {
+              animation: scroll-left 20s linear infinite;
+              white-space: nowrap;
+            }
+            @keyframes scroll-left {
+              0% { transform: translateX(100%); }
+              100% { transform: translateX(-100%); }
+            }
+          `}} />
+
+          <div className="container mx-auto max-w-7xl">
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-700 to-amber-600 bg-clip-text text-transparent mb-12 text-center">
+              {content[currentLanguage].boards.title}
+            </h2>
+
+            <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+              {/* Daily Events Board */}
+              <div className="bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 border-orange-500 h-[400px] flex flex-col relative">
+                <div className="bg-orange-50 p-4 shrink-0 flex items-center justify-center gap-3 shadow-sm z-10">
+                  <Clock className="text-orange-600 h-7 w-7 animate-pulse" />
+                  <h3 className="text-xl font-bold text-orange-800 uppercase tracking-widest">{content[currentLanguage].boards.daily}</h3>
                 </div>
-                <ul className="space-y-4 relative z-10">
-                  {content[currentLanguage].activities.map(
-                    (activity, index) => (
-                      <li
-                        key={index}
-                        className="flex items-center group/item hover:translate-x-2 transition-transform duration-300"
-                      >
-                        <span className="bg-gradient-to-r from-orange-100 to-amber-100 text-orange-800 rounded-xl px-4 py-2 text-sm font-bold mr-4 shadow-md group-hover/item:shadow-lg group-hover/item:from-orange-200 group-hover/item:to-amber-200 transition-all duration-300">
-                          {activity.time}
-                        </span>
-                        <span className="text-gray-700 font-medium">
-                          {activity.name}
-                        </span>
-                      </li>
-                    ),
-                  )}
-                </ul>
+                <div className="flex-1 overflow-hidden relative">
+                  <div className="absolute inset-0 flex flex-col gap-4 p-6 scroll-vertical">
+                    {dynamicContent[currentLanguage]?.dailyEvents?.length > 0 ? (
+                      dynamicContent[currentLanguage].dailyEvents.map((ev, i) => (
+                        <div key={i} className="bg-gradient-to-r from-orange-50 to-white p-4 rounded-xl shadow-md border-l-4 border-orange-400">
+                          <span className="block text-xs font-bold text-orange-500 mb-1">{ev.date} • {ev.time}</span>
+                          <span className="text-gray-800 font-semibold">{ev.event}</span>
+                        </div>
+                      ))
+                    ) : (
+                      <p className="text-gray-400 text-center italic mt-10">{content[currentLanguage].boards.noDaily}</p>
+                    )}
+                  </div>
+                </div>
               </div>
 
-              {/* Upcoming Events */}
-              <div className="group bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-t-4 border-amber-500 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-amber-100 to-transparent rounded-bl-full opacity-50"></div>
-                <div className="flex items-center mb-8 relative z-10">
-                  <div className="bg-gradient-to-br from-amber-500 to-amber-600 p-4 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Calendar className="text-white h-8 w-8" />
-                  </div>
-                  <h3 className="text-3xl font-bold text-amber-800 ml-4">
-                    {content[currentLanguage].upcomingEvents}
-                  </h3>
+              {/* Monthly Events Board */}
+              <div className="bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 border-amber-500 h-[400px] flex flex-col relative">
+                <div className="bg-amber-50 p-4 shrink-0 flex items-center justify-center gap-3 shadow-sm z-10">
+                  <Calendar className="text-amber-600 h-7 w-7 animate-pulse" />
+                  <h3 className="text-xl font-bold text-amber-800 uppercase tracking-widest">{content[currentLanguage].boards.monthly}</h3>
                 </div>
-                <ul className="space-y-4 relative z-10">
-                  {content[currentLanguage].events.map((event, index) => (
-                    <li
-                      key={index}
-                      className="flex items-center group/item hover:translate-x-2 transition-transform duration-300"
-                    >
-                      <span className="bg-gradient-to-r from-amber-100 to-yellow-100 text-amber-800 rounded-xl px-4 py-2 text-sm font-bold mr-4 shadow-md group-hover/item:shadow-lg group-hover/item:from-amber-200 group-hover/item:to-yellow-200 transition-all duration-300">
-                        {event.date}
-                      </span>
-                      <span className="text-gray-700 font-medium">
-                        {event.name}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="flex-1 overflow-hidden relative">
+                  <div className="absolute inset-0 flex flex-col gap-4 p-6 scroll-vertical" style={{animationDuration: "12s", animationDelay: "-2s"}}>
+                    {dynamicContent[currentLanguage]?.monthlyEvents?.length > 0 ? (
+                      dynamicContent[currentLanguage].monthlyEvents.map((ev, i) => (
+                        <div key={i} className="bg-gradient-to-r from-amber-50 to-white p-4 rounded-xl shadow-md border-l-4 border-amber-400">
+                          <span className="block text-xs font-bold text-amber-600 mb-1">{ev.date} • {ev.time}</span>
+                          <span className="text-gray-800 font-semibold">{ev.event}</span>
+                        </div>
+                      ))
+                    ) : (
+                      <p className="text-gray-400 text-center italic mt-10">{content[currentLanguage].boards.noMonthly}</p>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {/* Announcements Board */}
+              <div className="bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 border-rose-500 h-[400px] flex flex-col relative">
+                <div className="bg-rose-50 p-4 shrink-0 flex items-center justify-center gap-3 shadow-sm z-10">
+                  <MessageSquareWarning className="text-rose-600 h-7 w-7 animate-pulse" />
+                  <h3 className="text-xl font-bold text-rose-800 uppercase tracking-widest">{content[currentLanguage].boards.announcements}</h3>
+                </div>
+                <div className="flex-1 overflow-hidden relative bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+                  <div className="absolute inset-0 flex items-center bg-black/5">
+                    <p className="text-xl md:text-2xl font-bold text-gray-800 px-6 leading-relaxed marquee-horizontal" style={{ animationDuration: '30s' }}>
+                      ✨ {dynamicContent[currentLanguage]?.announcements || content[currentLanguage].boards.defaultAnnouncement} ✨
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -516,7 +602,157 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── Kumbabishekam Festival Section ── */}
+        <section className="py-20 px-4 bg-gradient-to-b from-amber-50 via-orange-50 to-amber-50 relative overflow-hidden">
+          {/* Decorative mandala bg */}
+          <div className="absolute inset-0 pointer-events-none opacity-5"
+            style={{ backgroundImage: "radial-gradient(circle, #f97316 1.5px, transparent 1.5px)", backgroundSize: "40px 40px" }} />
+
+          <div className="container mx-auto relative z-10 max-w-7xl">
+
+            {/* ── Section Header ── */}
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-100 to-amber-100 px-6 py-2 rounded-full shadow mb-5">
+                <span className="text-2xl">🪔</span>
+                <span className="text-orange-800 font-semibold text-sm tracking-wide">Sacred Event · 25-03-2026</span>
+              </div>
+
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight bg-gradient-to-r from-orange-700 via-red-600 to-amber-600 bg-clip-text text-transparent mb-3 px-2">
+                12ஆம் வருட மஹா கும்பாபிஷேகம்
+              </h2>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-orange-700 mb-2">
+                மற்றும் சாஸ்தா கலையரங்க திறப்பு விழா
+              </h3>
+              <p className="text-orange-500 font-semibold text-lg mb-4">25 மார்ச் 2026</p>
+
+              {/* Swami name section */}
+              <div className="inline-flex flex-col sm:flex-row items-center gap-2 bg-white border border-orange-200 rounded-2xl shadow-lg px-6 py-4 mt-2">
+                <span className="text-orange-600 font-bold text-base">தலைமை :</span>
+                <span className="text-gray-800 font-semibold text-base sm:text-lg">
+                  சுவாமி சிவாத்மானந்த ஜீ மஹாராஜ்
+                </span>
+                <span className="text-gray-500 text-sm">(வெள்ளிமலை, இந்து தர்ம வித்யாபீட அமைப்பு செயலர்)</span>
+              </div>
+            </div>
+
+            {/* ── Videos: landscape desktop / portrait mobile ── */}
+            <div className="mb-16">
+              <h4 className="text-center text-xl font-bold text-orange-700 mb-8 flex items-center justify-center gap-2">
+                <span>🎬</span> விழா காணொளிகள் (Event Videos)
+              </h4>
+
+              <style>{`
+                .event-video-wrap {
+                  position: relative;
+                  width: 100%;
+                  max-width: 420px;
+                  margin: 0 auto;
+                  aspect-ratio: 9/16;
+                  border-radius: 1rem;
+                  overflow: hidden;
+                }
+                @media (min-width: 640px) {
+                  .event-video-wrap {
+                    max-width: 800px;
+                    aspect-ratio: 16/9;
+                  }
+                }
+                .event-video-wrap video {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                }
+              `}</style>
+
+              <div className="flex flex-col gap-8 items-center">
+                {/* Video 1 */}
+                <div className="w-full flex flex-col items-center gap-3">
+                  <div className="event-video-wrap shadow-2xl border-4 border-orange-300 hover:border-orange-500 transition-all duration-300 bg-black">
+                    <video controls preload="none" playsInline>
+                      <source src="https://res.cloudinary.com/dn9w8pm0t/video/upload/v1775739031/temple_1_1_jkfcl1.mp4" type="video/mp4" />
+                    </video>
+                    <div className="absolute top-3 left-3 bg-orange-600/90 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+                      📹 Video 1
+                    </div>
+                  </div>
+                </div>
+
+                {/* Video 2 */}
+                <div className="w-full flex flex-col items-center gap-3">
+                  <div className="event-video-wrap shadow-2xl border-4 border-amber-300 hover:border-amber-500 transition-all duration-300 bg-black">
+                    <video controls preload="none" playsInline>
+                      <source src="https://res.cloudinary.com/dn9w8pm0t/video/upload/v1775735786/VN20260329_191151_otevyn.mp4" type="video/mp4" />
+                    </video>
+                    <div className="absolute top-3 left-3 bg-amber-600/90 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+                      📹 Video 2
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* ── Image Gallery ── */}
+            <div>
+              <h4 className="text-center text-xl font-bold text-orange-700 mb-8 flex items-center justify-center gap-2">
+                <span>📸</span> விழா நிகழ்படங்கள் (Event Photos)
+              </h4>
+
+              <div className="columns-2 sm:columns-3 lg:columns-4 xl:columns-5 gap-3 space-y-3">
+                {[
+                  /* ── Replace each URL below with your actual image URL ── */
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739147/vilaku_sdhxvt.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739146/tem3_pfiy2m.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739146/committe_jhoddj.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739145/oorvalam1_e6puul.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739144/oorvalam2_b4s5xp.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739144/oorvalam3_n1zib7.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739143/sami1_xyoqf7.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739143/sami2_t3rrle.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739142/sami4_dajbzp.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739142/kum1_st8xi6.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739142/tem1_vownhn.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739140/group_kn0vyy.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739142/tem2_bsxz8p.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739141/fulltem1_x8efcg.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739140/kum2_e9qea0.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739140/speech_akpqy0.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739139/mandabam1_xoytnq.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739139/madabamn_jvzocs.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739137/fountain1_n6wclh.png",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739135/templ_uusdpe.jpg",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739102/WhatsApp_Image_2026-04-09_at_6.15.30_PM_f6nzcg.jpg",
+                  "https://res.cloudinary.com/dn9w8pm0t/image/upload/v1775739990/WhatsApp_Image_2026-03-25_at_12.43.39_PM_o07lsl.jpg",
+                  
+                  
+
+
+                ].map((src, i) => (
+                  <div
+                    key={i}
+                    className="break-inside-avoid rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-orange-50 border border-orange-100"
+                  >
+                    <img
+                      src={src}
+                      alt={`Kumbabishekam 2026 - Photo ${i + 1}`}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-auto object-cover block"
+                      onError={(e) => { e.currentTarget.style.display='none'; }}
+                    />
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-center text-orange-400 text-xs mt-6 italic">
+                📷 12ஆம் வருட மஹா கும்பாபிஷேகம் · 25-03-2026 · காவம்பாட்டுவிளை
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Services Section */}
+
         <section className="py-20 px-4 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-50">
           <div className="container mx-auto">
             <div className="text-center mb-16">
@@ -728,7 +964,7 @@ export default function HomePage() {
                     <div className="flex items-center gap-2 bg-gradient-to-r from-orange-100 to-amber-100 px-4 py-2 rounded-full">
                       <Award className="h-5 w-5 text-orange-600" />
                       <span className="text-orange-800 font-semibold text-sm">
-                        Sacred Project
+                        Community Hall
                       </span>
                     </div>
                   </div>
@@ -739,34 +975,26 @@ export default function HomePage() {
                     {content[currentLanguage].constructionText}
                   </p>
 
-                  {/* Progress bar */}
+
+                  {/* Contact Info */}
                   <div className="bg-gradient-to-r from-orange-100 to-amber-100 p-6 rounded-2xl mb-8 shadow-lg">
-                    <div className="flex justify-between items-center mb-3">
-                      <span className="text-orange-800 font-semibold">
-                        Construction Progress
-                      </span>
-                      <span className="text-orange-600 font-bold text-xl">
-                        40%
-                      </span>
-                    </div>
-                    <div className="w-full bg-orange-200 rounded-full h-6 overflow-hidden shadow-inner">
-                      <div className="bg-gradient-to-r from-orange-500 via-orange-600 to-amber-500 h-6 rounded-full w-2/5 animate-pulse shadow-lg"></div>
-                    </div>
-                    <div className="flex justify-between mt-3 text-sm text-orange-700">
-                      <span className="font-medium">Started</span>
-                      <span className="font-medium">In Progress</span>
-                      <span className="font-medium text-orange-400">
-                        Completion
-                      </span>
+                    <p className="text-orange-800 font-semibold mb-4 text-lg">📞 Contact for Booking</p>
+                    <div className="flex flex-col gap-3">
+                      <a href="tel:9688115321" className="flex items-center gap-3 bg-white px-5 py-3 rounded-xl shadow hover:shadow-md transition text-orange-700 font-bold text-lg">
+                        <span>📱</span> 9688115321
+                      </a>
+                      <a href="tel:9965856975" className="flex items-center gap-3 bg-white px-5 py-3 rounded-xl shadow hover:shadow-md transition text-orange-700 font-bold text-lg">
+                        <span>📱</span> 9965856975
+                      </a>
                     </div>
                   </div>
 
                   <a
-                    href="/construction"
+                    href="/communityhall"
                     className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
                   >
                     {content[currentLanguage].learnMoreDonate}
-                    <Heart className="h-5 w-5" />
+                    <Phone className="h-5 w-5" />
                   </a>
                 </div>
 
@@ -780,7 +1008,7 @@ export default function HomePage() {
                     <div className="absolute inset-0 bg-gradient-to-br from-orange-600/10 to-transparent pointer-events-none"></div>
                     <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg z-10">
                       <p className="text-orange-600 font-bold text-sm">
-                        🏗️ Under Construction
+                        🏛️ Available for Booking
                       </p>
                     </div>
                   </div>

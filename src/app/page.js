@@ -1,23 +1,26 @@
 export const metadata = {
-  title: "Elavuvillai | Sree Dharma Sastha Temple - Spiritual Heart of Kavampattuvillai",
+  title: "Elavuvillai Sastha Temple | Sree Dharma Sastha Temple - Official Website",
   description:
-    "Welcome to Elavuvillai's spiritual center - Sree Dharma Sastha Temple in Kavampattuvillai, Kanyakumari. Discover Elavuvillai's rich heritage, temple history, daily pooja timings, matrimony services, Sastha Kalai Arangam community hall, festivals, and cultural activities. Your guide to Elavuvillai, Tamil Nadu.",
+    "Elavuvillai Sastha Temple official website. Sree Dharma Sastha Temple in Kavampattuvillai, Elavuvillai, Kanyakumari. Get pooja timings, matrimony registration, community hall booking, festival updates, and more. Serving Elavuvillai community since decades.",
   keywords: [
     "Elavuvillai",
     "Elavuvillai temple",
-    "Elavuvillai Kanyakumari",
-    "Elavuvillai Tamil Nadu",
-    "Sree Dharma Sastha Temple",
+    "Elavuvillai sastha temple",
+    "elavuvillai temple timings",
+    "Sree Dharma Sastha Temple Elavuvillai",
     "Dharma Sastha Temple Elavuvillai",
     "Sastha Temple Kavampattuvillai",
-    "Ayyappa temple Kanyakumari",
+    "Elavuvillai Kanyakumari",
+    "Elavuvillai Tamil Nadu",
+    "Ayyappa temple Elavuvillai",
     "Temple in Elavuvillai",
-    "Kavambadu temple",
     "Kavampattuvillai temple",
-    "Hindu temple Kanyakumari",
+    "Hindu temple Elavuvillai",
     "Sree Dharma Sastha Kavampattuvillai",
     "Elavuvillai matrimony",
-    "temple matrimony",
+    "matrimony Elavuvillai",
+    "temple matrimony Elavuvillai",
+    "Elavuvillai marriage",
     "matrimony services Elavuvillai",
     "Elavuvillai community",
     "Sastha Kalai Arangam",
@@ -25,16 +28,17 @@ export const metadata = {
     "Elavuvillai village",
     "places in Elavuvillai",
     "Elavuvillai location",
-    "visit Elavuvillai"
+    "visit Elavuvillai",
+    "Elavuvillai pooja"
   ],
   metadataBase: new URL("https://sree-dharma-sastha-kavampattuvillai.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Elavuvillai - Sree Dharma Sastha Temple",
+    title: "Elavuvillai Sastha Temple | Sree Dharma Sastha Temple - Official Website",
     description:
-      "Discover Elavuvillai's spiritual heritage at Sree Dharma Sastha Temple in Kavampattuvillai, Kanyakumari. Explore Elavuvillai's temple history, daily poojas, cultural events and festivals.",
+      "Official website of Elavuvillai Sree Dharma Sastha Temple, Kavampattuvillai, Kanyakumari. Explore pooja timings, matrimony services, community hall, festivals and cultural events in Elavuvillai.",
     url: "https://sree-dharma-sastha-kavampattuvillai.vercel.app",
     siteName: "Elavuvillai Sree Dharma Sastha Temple",
     images: [
@@ -42,7 +46,7 @@ export const metadata = {
         url: "/images/koil-1.png",
         width: 1200,
         height: 630,
-        alt: "Sree Dharma Sastha Temple Kavampattuvillai",
+        alt: "Elavuvillai Sree Dharma Sastha Temple - Kavampattuvillai, Kanyakumari",
       },
     ],
     locale: "en_US",
@@ -50,9 +54,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elavuvillai - Sree Dharma Sastha Temple",
+    title: "Elavuvillai Sastha Temple | Sree Dharma Sastha Temple",
     description:
-      "Elavuvillai's spiritual center in Kavampattuvillai, Kanyakumari. Discover Elavuvillai's temple heritage, pooja details, history, construction and community services.",
+      "Elavuvillai's spiritual center in Kavampattuvillai, Kanyakumari. Daily poojas, matrimony services, community hall booking and more.",
     images: ["/images/koil-1.png"],
   },
 };
